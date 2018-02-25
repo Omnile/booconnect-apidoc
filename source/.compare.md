@@ -1167,7 +1167,8 @@ $.ajax(settings).done(function (response) {
 Orders resource endpoints
 <!-- START_985d87fa04a157f2d8b59ef306bf6f06 -->
 ## List all orders
-Display a listing of the resource.
+
+Display a paginated list of all orders.
 
 > Example request:
 
@@ -1283,127 +1284,11 @@ $.ajax(settings).done(function (response) {
 
 <!-- END_c79cb2035f69ac8078c2cec9fc2fab4a -->
 
-<!-- START_13f4a2ba5be2993e266a0acf8d3bd280 -->
-## Display the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET "http://booconnect.run/api/v1/orders/{order}" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/orders/{order}",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-> Example response:
-
-```json
-{
-    "message": "Unauthenticated."
-}
-```
-
-### HTTP Request
-`GET api/v1/orders/{order}`
-
-`HEAD api/v1/orders/{order}`
-
-
-<!-- END_13f4a2ba5be2993e266a0acf8d3bd280 -->
-
-<!-- START_f9c8be8efaa780daaa0328503bf2d45e -->
-## Show the form for editing the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET "http://booconnect.run/api/v1/orders/{order}/edit" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/orders/{order}/edit",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-> Example response:
-
-```json
-{
-    "message": "Unauthenticated."
-}
-```
-
-### HTTP Request
-`GET api/v1/orders/{order}/edit`
-
-`HEAD api/v1/orders/{order}/edit`
-
-
-<!-- END_f9c8be8efaa780daaa0328503bf2d45e -->
-
-<!-- START_2e6d997181b1c50b2b94eaa14b66f016 -->
-## Update the specified resource in storage.
-
-> Example request:
-
-```bash
-curl -X PUT "http://booconnect.run/api/v1/orders/{order}" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/orders/{order}",
-    "method": "PUT",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-
-### HTTP Request
-`PUT api/v1/orders/{order}`
-
-`PATCH api/v1/orders/{order}`
-
-
-<!-- END_2e6d997181b1c50b2b94eaa14b66f016 -->
-
 <!-- START_f34ad9d71f18dd67576cc6db60268192 -->
-## Remove the specified resource from storage.
+## Cancel an order
+
+A user can cancel an order within the first NUMBER minuites after
+making the order.
 
 > Example request:
 
