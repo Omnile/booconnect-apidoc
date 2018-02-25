@@ -1585,7 +1585,8 @@ $.ajax(settings).done(function (response) {
 <h1>Verify</h1>
 <p>phone verification endpoints</p>
 <!-- START_aa558d00f323830cf03c0cdf62bf4f4f -->
-<h2>Display a listing of the resource.</h2>
+<h2>Get Status</h2>
+<p>Get the Verification Status of the authenticated user</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
@@ -1614,48 +1615,26 @@ $.ajax(settings).done(function (response) {
 <p><code>GET api/v1/verify</code></p>
 <p><code>HEAD api/v1/verify</code></p>
 <!-- END_aa558d00f323830cf03c0cdf62bf4f4f -->
-<!-- START_75d029285a6014fbe3dea9ac047fe456 -->
-<h2>Show the form for creating a new resource.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X GET "http://booconnect.run/api/v1/verify/create" \
--H "Accept: application/json"</code></pre>
-<pre><code class="language-javascript">var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/verify/create",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});</code></pre>
-<blockquote>
-<p>Example response:</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "Unauthenticated."
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>GET api/v1/verify/create</code></p>
-<p><code>HEAD api/v1/verify/create</code></p>
-<!-- END_75d029285a6014fbe3dea9ac047fe456 -->
 <!-- START_2986fe2644729ef9fa55818efeeda18c -->
-<h2>Store a newly created resource in storage.</h2>
+<h2>Verify OTP</h2>
+<p>Verify the OTP code that was sent to the authenticated user.</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST "http://booconnect.run/api/v1/verify" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+    -d "phone"="incidunt" \
+    -d "token"="incidunt" \
+</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
     "url": "http://booconnect.run/api/v1/verify",
     "method": "POST",
+    "data": {
+        "phone": "incidunt",
+        "token": "incidunt"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -1666,37 +1645,31 @@ $.ajax(settings).done(function (response) {
 });</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/verify</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>token</td>
+<td>string</td>
+<td>required</td>
+<td>Valid user token</td>
+</tr>
+</tbody>
+</table>
 <!-- END_2986fe2644729ef9fa55818efeeda18c -->
-<!-- START_bd0686bcd77d2e86915477144181cb4d -->
-<h2>Display the specified resource.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X GET "http://booconnect.run/api/v1/verify/{verify}" \
--H "Accept: application/json"</code></pre>
-<pre><code class="language-javascript">var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/verify/{verify}",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});</code></pre>
-<blockquote>
-<p>Example response:</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "Unauthenticated."
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>GET api/v1/verify/{verify}</code></p>
-<p><code>HEAD api/v1/verify/{verify}</code></p>
-<!-- END_bd0686bcd77d2e86915477144181cb4d -->
 <!-- START_9a40a2f77477a7bb1ab9f8b37216fcec -->
 <h2>Show the form for editing the specified resource.</h2>
 <blockquote>
@@ -1728,17 +1701,24 @@ $.ajax(settings).done(function (response) {
 <p><code>HEAD api/v1/verify/{verify}/edit</code></p>
 <!-- END_9a40a2f77477a7bb1ab9f8b37216fcec -->
 <!-- START_3b30ae7fc7fb9e3fea044b298668df82 -->
-<h2>Update the specified resource in storage.</h2>
+<h2>Send Verification Code</h2>
+<p>A temporary verification code will be sent to the user.
+This code will expire after 5 minuites.</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT "http://booconnect.run/api/v1/verify/{verify}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+    -d "phone"="laboriosam" \
+</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
     "url": "http://booconnect.run/api/v1/verify/{verify}",
     "method": "PUT",
+    "data": {
+        "phone": "laboriosam"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -1750,30 +1730,25 @@ $.ajax(settings).done(function (response) {
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/verify/{verify}</code></p>
 <p><code>PATCH api/v1/verify/{verify}</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
 <!-- END_3b30ae7fc7fb9e3fea044b298668df82 -->
-<!-- START_56dd8d9950105f6c47c0eba843d56c04 -->
-<h2>Remove the specified resource from storage.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X DELETE "http://booconnect.run/api/v1/verify/{verify}" \
--H "Accept: application/json"</code></pre>
-<pre><code class="language-javascript">var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/verify/{verify}",
-    "method": "DELETE",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});</code></pre>
-<h3>HTTP Request</h3>
-<p><code>DELETE api/v1/verify/{verify}</code></p>
-<!-- END_56dd8d9950105f6c47c0eba843d56c04 -->
 <h1>Wishlist</h1>
 <p>Item-Wishlist resource endpoints</p>
 <!-- START_3f8d78a807f16aa9a1195e047bf25b96 -->

@@ -1781,7 +1781,9 @@ $.ajax(settings).done(function (response) {
 
 phone verification endpoints
 <!-- START_aa558d00f323830cf03c0cdf62bf4f4f -->
-## Display a listing of the resource.
+## Get Status
+
+Get the Verification Status of the authenticated user
 
 > Example request:
 
@@ -1822,56 +1824,19 @@ $.ajax(settings).done(function (response) {
 
 <!-- END_aa558d00f323830cf03c0cdf62bf4f4f -->
 
-<!-- START_75d029285a6014fbe3dea9ac047fe456 -->
-## Show the form for creating a new resource.
-
-> Example request:
-
-```bash
-curl -X GET "http://booconnect.run/api/v1/verify/create" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/verify/create",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-> Example response:
-
-```json
-{
-    "message": "Unauthenticated."
-}
-```
-
-### HTTP Request
-`GET api/v1/verify/create`
-
-`HEAD api/v1/verify/create`
-
-
-<!-- END_75d029285a6014fbe3dea9ac047fe456 -->
-
 <!-- START_2986fe2644729ef9fa55818efeeda18c -->
-## Store a newly created resource in storage.
+## Verify OTP
+
+Verify the OTP code that was sent to the authenticated user.
 
 > Example request:
 
 ```bash
 curl -X POST "http://booconnect.run/api/v1/verify" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "phone"="incidunt" \
+    -d "token"="incidunt" \
+
 ```
 
 ```javascript
@@ -1880,6 +1845,10 @@ var settings = {
     "crossDomain": true,
     "url": "http://booconnect.run/api/v1/verify",
     "method": "POST",
+    "data": {
+        "phone": "incidunt",
+        "token": "incidunt"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -1894,50 +1863,14 @@ $.ajax(settings).done(function (response) {
 ### HTTP Request
 `POST api/v1/verify`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    phone | string |  required  | 
+    token | string |  required  | Valid user token
 
 <!-- END_2986fe2644729ef9fa55818efeeda18c -->
-
-<!-- START_bd0686bcd77d2e86915477144181cb4d -->
-## Display the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET "http://booconnect.run/api/v1/verify/{verify}" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/verify/{verify}",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-> Example response:
-
-```json
-{
-    "message": "Unauthenticated."
-}
-```
-
-### HTTP Request
-`GET api/v1/verify/{verify}`
-
-`HEAD api/v1/verify/{verify}`
-
-
-<!-- END_bd0686bcd77d2e86915477144181cb4d -->
 
 <!-- START_9a40a2f77477a7bb1ab9f8b37216fcec -->
 ## Show the form for editing the specified resource.
@@ -1982,13 +1915,18 @@ $.ajax(settings).done(function (response) {
 <!-- END_9a40a2f77477a7bb1ab9f8b37216fcec -->
 
 <!-- START_3b30ae7fc7fb9e3fea044b298668df82 -->
-## Update the specified resource in storage.
+## Send Verification Code
+
+A temporary verification code will be sent to the user.
+This code will expire after 5 minuites.
 
 > Example request:
 
 ```bash
 curl -X PUT "http://booconnect.run/api/v1/verify/{verify}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "phone"="laboriosam" \
+
 ```
 
 ```javascript
@@ -1997,6 +1935,9 @@ var settings = {
     "crossDomain": true,
     "url": "http://booconnect.run/api/v1/verify/{verify}",
     "method": "PUT",
+    "data": {
+        "phone": "laboriosam"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -2013,41 +1954,13 @@ $.ajax(settings).done(function (response) {
 
 `PATCH api/v1/verify/{verify}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    phone | string |  required  | 
 
 <!-- END_3b30ae7fc7fb9e3fea044b298668df82 -->
-
-<!-- START_56dd8d9950105f6c47c0eba843d56c04 -->
-## Remove the specified resource from storage.
-
-> Example request:
-
-```bash
-curl -X DELETE "http://booconnect.run/api/v1/verify/{verify}" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/verify/{verify}",
-    "method": "DELETE",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-
-### HTTP Request
-`DELETE api/v1/verify/{verify}`
-
-
-<!-- END_56dd8d9950105f6c47c0eba843d56c04 -->
 
 #Wishlist
 
