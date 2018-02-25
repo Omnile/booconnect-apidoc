@@ -51,7 +51,8 @@
 <h1>Account</h1>
 <p>Account Endpoints</p>
 <!-- START_4d7af81b146f8d07806e50e6833db15c -->
-<h2>Display a listing of the resource.</h2>
+<h2>Get Account.</h2>
+<p>Get the data of the authenticated user</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
@@ -80,38 +81,9 @@ $.ajax(settings).done(function (response) {
 <p><code>GET api/v1/account</code></p>
 <p><code>HEAD api/v1/account</code></p>
 <!-- END_4d7af81b146f8d07806e50e6833db15c -->
-<!-- START_7d7e72d015e952a72534beb17042ca82 -->
-<h2>Show the form for creating a new resource.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X GET "http://booconnect.run/api/v1/account/create" \
--H "Accept: application/json"</code></pre>
-<pre><code class="language-javascript">var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/account/create",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});</code></pre>
-<blockquote>
-<p>Example response:</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "Unauthenticated."
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>GET api/v1/account/create</code></p>
-<p><code>HEAD api/v1/account/create</code></p>
-<!-- END_7d7e72d015e952a72534beb17042ca82 -->
 <!-- START_700b6083aece5829c3fc1304c926b8c6 -->
-<h2>Store a newly created resource in storage.</h2>
+<h2>Update Account</h2>
+<p>Update account information</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
@@ -133,66 +105,6 @@ $.ajax(settings).done(function (response) {
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/account</code></p>
 <!-- END_700b6083aece5829c3fc1304c926b8c6 -->
-<!-- START_2c28f7c2f15ed5fc23ee33650e3df3cb -->
-<h2>Display the specified resource.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X GET "http://booconnect.run/api/v1/account/{account}" \
--H "Accept: application/json"</code></pre>
-<pre><code class="language-javascript">var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/account/{account}",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});</code></pre>
-<blockquote>
-<p>Example response:</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "Unauthenticated."
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>GET api/v1/account/{account}</code></p>
-<p><code>HEAD api/v1/account/{account}</code></p>
-<!-- END_2c28f7c2f15ed5fc23ee33650e3df3cb -->
-<!-- START_7ee1dbded1602489e3a18cdde20d1e1f -->
-<h2>Show the form for editing the specified resource.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X GET "http://booconnect.run/api/v1/account/{account}/edit" \
--H "Accept: application/json"</code></pre>
-<pre><code class="language-javascript">var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/account/{account}/edit",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});</code></pre>
-<blockquote>
-<p>Example response:</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "Unauthenticated."
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>GET api/v1/account/{account}/edit</code></p>
-<p><code>HEAD api/v1/account/{account}/edit</code></p>
-<!-- END_7ee1dbded1602489e3a18cdde20d1e1f -->
 <!-- START_ab7447183d9e96e2392237f06ba821fc -->
 <h2>Update the specified resource in storage.</h2>
 <blockquote>
@@ -217,29 +129,6 @@ $.ajax(settings).done(function (response) {
 <p><code>PUT api/v1/account/{account}</code></p>
 <p><code>PATCH api/v1/account/{account}</code></p>
 <!-- END_ab7447183d9e96e2392237f06ba821fc -->
-<!-- START_da44348855fd7a7a313be400d2504f40 -->
-<h2>Remove the specified resource from storage.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X DELETE "http://booconnect.run/api/v1/account/{account}" \
--H "Accept: application/json"</code></pre>
-<pre><code class="language-javascript">var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/account/{account}",
-    "method": "DELETE",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});</code></pre>
-<h3>HTTP Request</h3>
-<p><code>DELETE api/v1/account/{account}</code></p>
-<!-- END_da44348855fd7a7a313be400d2504f40 -->
 <h1>Cart</h1>
 <p>Shopping cart endpoints</p>
 <!-- START_2e395b6f96faf612c0f5b034491ff221 -->

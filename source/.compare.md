@@ -23,7 +23,9 @@ Welcome to the generated API reference.
 
 Account Endpoints
 <!-- START_4d7af81b146f8d07806e50e6833db15c -->
-## Display a listing of the resource.
+## Get Account.
+
+Get the data of the authenticated user
 
 > Example request:
 
@@ -64,50 +66,10 @@ $.ajax(settings).done(function (response) {
 
 <!-- END_4d7af81b146f8d07806e50e6833db15c -->
 
-<!-- START_7d7e72d015e952a72534beb17042ca82 -->
-## Show the form for creating a new resource.
-
-> Example request:
-
-```bash
-curl -X GET "http://booconnect.run/api/v1/account/create" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/account/create",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-> Example response:
-
-```json
-{
-    "message": "Unauthenticated."
-}
-```
-
-### HTTP Request
-`GET api/v1/account/create`
-
-`HEAD api/v1/account/create`
-
-
-<!-- END_7d7e72d015e952a72534beb17042ca82 -->
-
 <!-- START_700b6083aece5829c3fc1304c926b8c6 -->
-## Store a newly created resource in storage.
+## Update Account
+
+Update account information
 
 > Example request:
 
@@ -138,90 +100,6 @@ $.ajax(settings).done(function (response) {
 
 
 <!-- END_700b6083aece5829c3fc1304c926b8c6 -->
-
-<!-- START_2c28f7c2f15ed5fc23ee33650e3df3cb -->
-## Display the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET "http://booconnect.run/api/v1/account/{account}" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/account/{account}",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-> Example response:
-
-```json
-{
-    "message": "Unauthenticated."
-}
-```
-
-### HTTP Request
-`GET api/v1/account/{account}`
-
-`HEAD api/v1/account/{account}`
-
-
-<!-- END_2c28f7c2f15ed5fc23ee33650e3df3cb -->
-
-<!-- START_7ee1dbded1602489e3a18cdde20d1e1f -->
-## Show the form for editing the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET "http://booconnect.run/api/v1/account/{account}/edit" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/account/{account}/edit",
-    "method": "GET",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-> Example response:
-
-```json
-{
-    "message": "Unauthenticated."
-}
-```
-
-### HTTP Request
-`GET api/v1/account/{account}/edit`
-
-`HEAD api/v1/account/{account}/edit`
-
-
-<!-- END_7ee1dbded1602489e3a18cdde20d1e1f -->
 
 <!-- START_ab7447183d9e96e2392237f06ba821fc -->
 ## Update the specified resource in storage.
@@ -257,39 +135,6 @@ $.ajax(settings).done(function (response) {
 
 
 <!-- END_ab7447183d9e96e2392237f06ba821fc -->
-
-<!-- START_da44348855fd7a7a313be400d2504f40 -->
-## Remove the specified resource from storage.
-
-> Example request:
-
-```bash
-curl -X DELETE "http://booconnect.run/api/v1/account/{account}" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/account/{account}",
-    "method": "DELETE",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-
-### HTTP Request
-`DELETE api/v1/account/{account}`
-
-
-<!-- END_da44348855fd7a7a313be400d2504f40 -->
 
 #Cart
 
