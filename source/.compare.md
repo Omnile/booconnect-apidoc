@@ -1783,7 +1783,7 @@ phone verification endpoints
 <!-- START_aa558d00f323830cf03c0cdf62bf4f4f -->
 ## Get Status
 
-Get the Verification Status of the authenticated user
+Get verification status on authenticated user
 
 > Example request:
 
