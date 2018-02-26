@@ -54,337 +54,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "message": "Unauthenticated."
 }
 ```
 
@@ -432,13 +102,22 @@ $.ajax(settings).done(function (response) {
 <!-- END_700b6083aece5829c3fc1304c926b8c6 -->
 
 <!-- START_ab7447183d9e96e2392237f06ba821fc -->
-## Update the specified resource in storage.
+## Update Account
+
+Update the authenticated user account
 
 > Example request:
 
 ```bash
 curl -X PUT "http://booconnect.run/api/v1/account/{account}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "firstname"="aut" \
+    -d "lastname"="aut" \
+    -d "password"="aut" \
+    -d "username"="aut" \
+    -d "gender"="aut" \
+    -d "phone"="aut" \
+
 ```
 
 ```javascript
@@ -447,6 +126,14 @@ var settings = {
     "crossDomain": true,
     "url": "http://booconnect.run/api/v1/account/{account}",
     "method": "PUT",
+    "data": {
+        "firstname": "aut",
+        "lastname": "aut",
+        "password": "aut",
+        "username": "aut",
+        "gender": "aut",
+        "phone": "aut"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -463,6 +150,16 @@ $.ajax(settings).done(function (response) {
 
 `PATCH api/v1/account/{account}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    firstname | string |  required  | Maximum: `255`
+    lastname | string |  required  | Maximum: `255`
+    password | string |  required  | Minimum: `6`
+    username | string |  required  | Minimum: `4`
+    gender | string |  required  | Minimum: `4`
+    phone | string |  required  | Minimum: `4`
 
 <!-- END_ab7447183d9e96e2392237f06ba821fc -->
 
@@ -470,7 +167,7 @@ $.ajax(settings).done(function (response) {
 
 Shopping cart endpoints
 <!-- START_2e395b6f96faf612c0f5b034491ff221 -->
-## Get Items
+## Get Cart Items
 List items in the shopping cart
 
 > Example request:
@@ -511,7 +208,7 @@ $.ajax(settings).done(function (response) {
 <!-- END_2e395b6f96faf612c0f5b034491ff221 -->
 
 <!-- START_b14a883b0d266dd902554e7afed0a2df -->
-## Add Item.
+## Add Cart Item.
 
 Add and item to the shopping cart
 
@@ -521,7 +218,7 @@ Add and item to the shopping cart
 curl -X POST "http://booconnect.run/api/v1/cart" \
 -H "Accept: application/json" \
     -d "row_id"="dolorum" \
-    -d "qty"="dolorum" \
+    -d "qty"="1332598056" \
 
 ```
 
@@ -533,7 +230,7 @@ var settings = {
     "method": "POST",
     "data": {
         "row_id": "dolorum",
-        "qty": "dolorum"
+        "qty": 1332598056
 },
     "headers": {
         "accept": "application/json"
@@ -553,13 +250,13 @@ $.ajax(settings).done(function (response) {
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    row_id | string |  required  | 
-    qty | string |  required  | Minimum: `1`
+    row_id | string |  required  | Maximum: `255`
+    qty | numeric |  required  | Minimum: `1`
 
 <!-- END_b14a883b0d266dd902554e7afed0a2df -->
 
 <!-- START_41412ed4b414717d56b418f4f9d05420 -->
-## Update Quantity
+## Update Cart Item Quantity
 Update a specific cart Item.
 
 > Example request:
@@ -568,7 +265,7 @@ Update a specific cart Item.
 curl -X PUT "http://booconnect.run/api/v1/cart/{cart}" \
 -H "Accept: application/json" \
     -d "row_id"="error" \
-    -d "qty"="error" \
+    -d "qty"="1213516256" \
 
 ```
 
@@ -580,7 +277,7 @@ var settings = {
     "method": "PUT",
     "data": {
         "row_id": "error",
-        "qty": "error"
+        "qty": 1213516256
 },
     "headers": {
         "accept": "application/json"
@@ -603,7 +300,7 @@ $.ajax(settings).done(function (response) {
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
     row_id | string |  required  | 
-    qty | string |  required  | Minimum: `1`
+    qty | numeric |  required  | Minimum: `1`
 
 <!-- END_41412ed4b414717d56b418f4f9d05420 -->
 
@@ -674,337 +371,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "message": "Unauthenticated."
 }
 ```
 
@@ -1046,337 +413,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "message": "Unauthenticated."
 }
 ```
 
@@ -1451,337 +488,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "message": "Unauthenticated."
 }
 ```
 
@@ -1823,337 +530,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "message": "Unauthenticated."
 }
 ```
 
@@ -2237,7 +614,7 @@ $.ajax(settings).done(function (response) {
 
 Items sold in resturants registered on BooConnect
 <!-- START_6cb5fef850c2ae6d0de134a3409a8f1a -->
-## Query Items
+## Query All Items
 Get a list of paginated items.
 
 > Example request:
@@ -2271,303 +648,303 @@ $.ajax(settings).done(function (response) {
     "data": [
         {
             "id": 1,
-            "name": "Braxton",
-            "resturant_id": 49,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?48466",
-            "description": "Provident laboriosam occaecati quas tempora.",
-            "price": 45,
+            "name": "Robb",
+            "resturant_id": 30,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?56430",
+            "description": "Eligendi dolorem rem autem et nulla consequatur ipsam.",
+            "price": 34,
             "user_id": 1,
-            "measurement": "plate",
-            "quantity": 18,
+            "measurement": "bowl",
+            "quantity": 34,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 45.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 34.00"
         },
         {
             "id": 2,
-            "name": "Jordon",
-            "resturant_id": 93,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?84535",
-            "description": "Quia beatae adipisci ut nobis.",
-            "price": 90,
-            "user_id": 1,
-            "measurement": "bowl",
-            "quantity": 84,
-            "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 90.00"
-        },
-        {
-            "id": 3,
-            "name": "Shanie",
-            "resturant_id": 85,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?55208",
-            "description": "Repudiandae fuga hic natus ab qui illo hic.",
-            "price": 68,
-            "user_id": 1,
-            "measurement": "bowl",
-            "quantity": 73,
-            "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 68.00"
-        },
-        {
-            "id": 4,
-            "name": "Boyd",
-            "resturant_id": 56,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?12529",
-            "description": "Tempora laboriosam numquam magnam aperiam.",
-            "price": 61,
-            "user_id": 1,
-            "measurement": "bowl",
-            "quantity": 96,
-            "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 61.00"
-        },
-        {
-            "id": 5,
-            "name": "Dexter",
-            "resturant_id": 4,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?18341",
-            "description": "Repellendus voluptas voluptas eveniet error neque corporis.",
-            "price": 24,
-            "user_id": 1,
-            "measurement": "plate",
-            "quantity": 32,
-            "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 24.00"
-        },
-        {
-            "id": 6,
-            "name": "Alessandro",
-            "resturant_id": 16,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?44502",
-            "description": "Dolores praesentium quis tempora fugiat quidem assumenda velit.",
-            "price": 39,
-            "user_id": 1,
-            "measurement": "bowl",
-            "quantity": 53,
-            "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 39.00"
-        },
-        {
-            "id": 7,
-            "name": "Yoshiko",
-            "resturant_id": 96,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?24412",
-            "description": "Quia minus quisquam molestiae consequatur voluptatem facere.",
-            "price": 87,
-            "user_id": 1,
-            "measurement": "plate",
-            "quantity": 91,
-            "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 87.00"
-        },
-        {
-            "id": 8,
-            "name": "Hortense",
-            "resturant_id": 4,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?99245",
-            "description": "Ullam qui aut facere eos.",
-            "price": 22,
-            "user_id": 1,
-            "measurement": "plate",
-            "quantity": 60,
-            "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 22.00"
-        },
-        {
-            "id": 9,
-            "name": "Jaren",
-            "resturant_id": 87,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?76181",
-            "description": "Consequuntur doloremque quos quis ut animi.",
-            "price": 23,
-            "user_id": 1,
-            "measurement": "plate",
-            "quantity": 61,
-            "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 23.00"
-        },
-        {
-            "id": 10,
-            "name": "Trinity",
-            "resturant_id": 8,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?19557",
-            "description": "Consectetur sit nesciunt ipsa.",
-            "price": 100,
+            "name": "Bulah",
+            "resturant_id": 23,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?40389",
+            "description": "Architecto aut incidunt consequatur necessitatibus.",
+            "price": 3,
             "user_id": 1,
             "measurement": "plate",
             "quantity": 42,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 100.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 3.00"
         },
         {
-            "id": 11,
-            "name": "Bobbie",
-            "resturant_id": 7,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?23543",
-            "description": "Eligendi et autem tempore iste laborum et labore.",
-            "price": 7,
+            "id": 3,
+            "name": "Perry",
+            "resturant_id": 11,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?68381",
+            "description": "Et nostrum eligendi vero placeat minus.",
+            "price": 32,
             "user_id": 1,
             "measurement": "bowl",
-            "quantity": 39,
+            "quantity": 22,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 7.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 32.00"
         },
         {
-            "id": 12,
-            "name": "Brock",
-            "resturant_id": 24,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?52840",
-            "description": "Vel eveniet soluta alias ipsa.",
-            "price": 66,
+            "id": 4,
+            "name": "Concepcion",
+            "resturant_id": 64,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?31334",
+            "description": "Quis a aliquid in architecto officia iure.",
+            "price": 55,
+            "user_id": 1,
+            "measurement": "plate",
+            "quantity": 63,
+            "deleted_at": null,
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 55.00"
+        },
+        {
+            "id": 5,
+            "name": "Astrid",
+            "resturant_id": 39,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?98180",
+            "description": "Quibusdam qui soluta et rerum aut quisquam.",
+            "price": 31,
+            "user_id": 1,
+            "measurement": "plate",
+            "quantity": 8,
+            "deleted_at": null,
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 31.00"
+        },
+        {
+            "id": 6,
+            "name": "Andreanne",
+            "resturant_id": 66,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?15712",
+            "description": "Incidunt voluptates ea ab odio qui quisquam.",
+            "price": 34,
+            "user_id": 1,
+            "measurement": "plate",
+            "quantity": 4,
+            "deleted_at": null,
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 34.00"
+        },
+        {
+            "id": 7,
+            "name": "Conor",
+            "resturant_id": 53,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?50284",
+            "description": "Voluptas totam voluptatem non est ab pariatur quibusdam.",
+            "price": 92,
+            "user_id": 1,
+            "measurement": "plate",
+            "quantity": 37,
+            "deleted_at": null,
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 92.00"
+        },
+        {
+            "id": 8,
+            "name": "Serenity",
+            "resturant_id": 94,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?76809",
+            "description": "Ipsum repudiandae facilis est.",
+            "price": 84,
             "user_id": 1,
             "measurement": "bowl",
-            "quantity": 25,
+            "quantity": 92,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 66.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 84.00"
         },
         {
-            "id": 13,
-            "name": "Zita",
-            "resturant_id": 81,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?43307",
-            "description": "Est blanditiis ut sapiente et.",
+            "id": 9,
+            "name": "Delfina",
+            "resturant_id": 3,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?27094",
+            "description": "Sit aut et repudiandae et praesentium.",
+            "price": 72,
+            "user_id": 1,
+            "measurement": "bowl",
+            "quantity": 23,
+            "deleted_at": null,
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 72.00"
+        },
+        {
+            "id": 10,
+            "name": "Alvis",
+            "resturant_id": 31,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?83908",
+            "description": "Temporibus porro facere recusandae sint iusto iusto optio perspiciatis.",
             "price": 9,
             "user_id": 1,
-            "measurement": "bowl",
-            "quantity": 77,
+            "measurement": "plate",
+            "quantity": 18,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
             "formatted_price": "GHC 9.00"
         },
         {
+            "id": 11,
+            "name": "Jean",
+            "resturant_id": 64,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?36896",
+            "description": "Aspernatur asperiores quo consequuntur sit nihil aut culpa.",
+            "price": 27,
+            "user_id": 1,
+            "measurement": "plate",
+            "quantity": 47,
+            "deleted_at": null,
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 27.00"
+        },
+        {
+            "id": 12,
+            "name": "Favian",
+            "resturant_id": 4,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?44856",
+            "description": "Temporibus sint consectetur aspernatur et at corrupti et.",
+            "price": 48,
+            "user_id": 1,
+            "measurement": "plate",
+            "quantity": 98,
+            "deleted_at": null,
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 48.00"
+        },
+        {
+            "id": 13,
+            "name": "Rosamond",
+            "resturant_id": 100,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?23636",
+            "description": "Quis molestias eligendi dicta quisquam eum.",
+            "price": 14,
+            "user_id": 1,
+            "measurement": "plate",
+            "quantity": 15,
+            "deleted_at": null,
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 14.00"
+        },
+        {
             "id": 14,
-            "name": "Makenna",
-            "resturant_id": 54,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?93854",
-            "description": "Consequuntur iusto neque exercitationem reiciendis ut doloremque ut.",
-            "price": 33,
+            "name": "Effie",
+            "resturant_id": 100,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?70469",
+            "description": "Et et tenetur vel ex officiis.",
+            "price": 97,
             "user_id": 1,
             "measurement": "bowl",
-            "quantity": 73,
+            "quantity": 44,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 33.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 97.00"
         },
         {
             "id": 15,
-            "name": "Peggie",
-            "resturant_id": 83,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?54399",
-            "description": "Nihil minus cupiditate quia illo cupiditate et.",
-            "price": 7,
+            "name": "Roxanne",
+            "resturant_id": 47,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?50883",
+            "description": "Officia in aut et et.",
+            "price": 48,
             "user_id": 1,
-            "measurement": "bowl",
-            "quantity": 38,
+            "measurement": "plate",
+            "quantity": 55,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 7.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 48.00"
         },
         {
             "id": 16,
-            "name": "Jermey",
-            "resturant_id": 91,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?83643",
-            "description": "Nihil autem perferendis neque debitis.",
-            "price": 45,
+            "name": "Esmeralda",
+            "resturant_id": 33,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?97877",
+            "description": "In distinctio ullam quis ipsum porro et exercitationem.",
+            "price": 100,
             "user_id": 1,
-            "measurement": "plate",
-            "quantity": 24,
+            "measurement": "bowl",
+            "quantity": 94,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 45.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 100.00"
         },
         {
             "id": 17,
-            "name": "Zander",
-            "resturant_id": 97,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?93439",
-            "description": "Maiores eos totam tenetur ut.",
-            "price": 63,
+            "name": "Raegan",
+            "resturant_id": 93,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?16070",
+            "description": "Qui quasi dicta vero eum aspernatur.",
+            "price": 4,
             "user_id": 1,
             "measurement": "plate",
-            "quantity": 76,
+            "quantity": 45,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 63.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 4.00"
         },
         {
             "id": 18,
-            "name": "Lonie",
-            "resturant_id": 47,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?67458",
-            "description": "Enim est repellat non laboriosam praesentium commodi ad.",
-            "price": 36,
+            "name": "Jaime",
+            "resturant_id": 68,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?71194",
+            "description": "Cupiditate omnis et quis consequatur in.",
+            "price": 5,
             "user_id": 1,
             "measurement": "bowl",
-            "quantity": 86,
+            "quantity": 37,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 36.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 5.00"
         },
         {
             "id": 19,
-            "name": "Riley",
-            "resturant_id": 93,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?61613",
-            "description": "Sunt corporis et vel ea maxime qui adipisci.",
-            "price": 18,
+            "name": "Demarco",
+            "resturant_id": 54,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?14682",
+            "description": "Maxime eos ad neque sed aperiam sint aliquid.",
+            "price": 3,
             "user_id": 1,
             "measurement": "bowl",
-            "quantity": 27,
+            "quantity": 90,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 18.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 3.00"
         },
         {
             "id": 20,
-            "name": "Virginie",
-            "resturant_id": 41,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?29628",
-            "description": "Eaque ab aliquam adipisci rerum odit id nam quam.",
-            "price": 69,
+            "name": "Harrison",
+            "resturant_id": 28,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?83161",
+            "description": "Consequatur non et officiis eius maxime exercitationem officiis sint.",
+            "price": 21,
             "user_id": 1,
-            "measurement": "plate",
-            "quantity": 9,
+            "measurement": "bowl",
+            "quantity": 47,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:18",
-            "updated_at": "2018-02-24 16:37:18",
-            "formatted_price": "GHC 69.00"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58",
+            "formatted_price": "GHC 21.00"
         }
     ],
     "first_page_url": "http:\/\/localhost\/api\/v1\/items?page=1",
@@ -2592,7 +969,7 @@ $.ajax(settings).done(function (response) {
 <!-- END_6cb5fef850c2ae6d0de134a3409a8f1a -->
 
 <!-- START_c82686db284c3bd830a93127392241c8 -->
-## Get Item
+## Get Single Item
 
 This will return a single item with it's
 attributes and set of pictures.
@@ -2625,27 +1002,19 @@ $.ajax(settings).done(function (response) {
 ```json
 {
     "id": 1,
-    "name": "Braxton",
-    "resturant_id": 49,
-    "image": "https:\/\/lorempixel.com\/150\/150\/food\/?48466",
-    "description": "Provident laboriosam occaecati quas tempora.",
-    "price": 45,
+    "name": "Robb",
+    "resturant_id": 30,
+    "image": "https:\/\/lorempixel.com\/150\/150\/food\/?56430",
+    "description": "Eligendi dolorem rem autem et nulla consequatur ipsam.",
+    "price": 34,
     "user_id": 1,
-    "measurement": "plate",
-    "quantity": 18,
+    "measurement": "bowl",
+    "quantity": 34,
     "deleted_at": null,
-    "created_at": "2018-02-24 16:37:18",
-    "updated_at": "2018-02-24 16:37:18",
-    "formatted_price": "GHC 45.00",
-    "pictures": {
-        "id": 27,
-        "imageable_id": 1,
-        "path": "https:\/\/lorempixel.com\/150\/150\/food\/?10097",
-        "description": "I'd hardly.",
-        "imageable_type": "App\\Item",
-        "created_at": "2018-02-24 16:37:19",
-        "updated_at": "2018-02-24 16:37:19"
-    }
+    "created_at": "2018-02-25 20:27:58",
+    "updated_at": "2018-02-25 20:27:58",
+    "formatted_price": "GHC 34.00",
+    "pictures": null
 }
 ```
 
@@ -2692,337 +1061,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "message": "Unauthenticated."
 }
 ```
 
@@ -3064,337 +1103,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "message": "Unauthenticated."
 }
 ```
 
@@ -3405,39 +1114,6 @@ $.ajax(settings).done(function (response) {
 
 
 <!-- END_325fd503850f4ce548c33deec4f9ddce -->
-
-<!-- START_c79cb2035f69ac8078c2cec9fc2fab4a -->
-## Store a newly created resource in storage.
-
-> Example request:
-
-```bash
-curl -X POST "http://booconnect.run/api/v1/orders" \
--H "Accept: application/json"
-```
-
-```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/orders",
-    "method": "POST",
-    "headers": {
-        "accept": "application/json"
-    }
-}
-
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
-```
-
-
-### HTTP Request
-`POST api/v1/orders`
-
-
-<!-- END_c79cb2035f69ac8078c2cec9fc2fab4a -->
 
 <!-- START_f34ad9d71f18dd67576cc6db60268192 -->
 ## Cancel an order
@@ -3514,463 +1190,463 @@ $.ajax(settings).done(function (response) {
     "data": [
         {
             "id": 1,
-            "name": "Zulauf Inc",
-            "phone": "+1 (396) 808-4309",
-            "registration_no": "14752",
-            "first_name": "Laurine",
-            "last_name": "Gibson",
-            "user_id": "90",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?51612",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?82385",
-            "place": "Lake Eulalia",
-            "city": "Port Larryberg",
-            "state": "North Carolina",
-            "country": "Bermuda",
-            "address": "91701 Gibson Mission",
-            "website": "gaylord.com",
-            "description": "Est sint cumque ut facilis.",
+            "name": "Roob, Schiller and Barrows",
+            "phone": "+1-932-342-2954",
+            "registration_no": "8923",
+            "first_name": "Lucy",
+            "last_name": "Bahringer",
+            "user_id": "97",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?22931",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?90873",
+            "place": "Evangelinetown",
+            "city": "Klingville",
+            "state": "Kentucky",
+            "country": "Luxembourg",
+            "address": "50310 Pierre Key",
+            "website": "kerluke.com",
+            "description": "Deserunt qui tenetur voluptatem.",
             "phone_verified": 0,
-            "email_verified": 1,
+            "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 2,
-            "name": "Mann Inc",
-            "phone": "(794) 819-8877 x281",
-            "registration_no": "43076",
-            "first_name": "Adam",
-            "last_name": "Fisher",
-            "user_id": "96",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?87217",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?58215",
-            "place": "West Kaleville",
-            "city": "Lake Bohaven",
-            "state": "Idaho",
-            "country": "Syrian Arab Republic",
-            "address": "67359 Thompson Track Suite 067",
-            "website": "dibbert.com",
-            "description": "Cum iste minus repudiandae deleniti dolores consequuntur accusantium.",
-            "phone_verified": 1,
+            "name": "Wilkinson-Sawayn",
+            "phone": "1-393-425-3414 x3153",
+            "registration_no": "30123",
+            "first_name": "Adele",
+            "last_name": "Yost",
+            "user_id": "16",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?25149",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?28349",
+            "place": "Hilllbury",
+            "city": "Lake Robin",
+            "state": "New Hampshire",
+            "country": "Sierra Leone",
+            "address": "79948 Elwin Alley",
+            "website": "cronin.com",
+            "description": "Tempore quisquam adipisci ut quisquam incidunt.",
+            "phone_verified": 0,
             "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 3,
-            "name": "Schuppe-Douglas",
-            "phone": "+14846544328",
-            "registration_no": "65692",
-            "first_name": "Reuben",
-            "last_name": "Walker",
-            "user_id": "6",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?17140",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?84615",
-            "place": "East Sandrinechester",
-            "city": "Port Billiechester",
-            "state": "Utah",
-            "country": "Liberia",
-            "address": "90423 Connelly Circles Apt. 321",
-            "website": "wilkinson.biz",
-            "description": "Eaque corrupti neque delectus tenetur excepturi dolores et fugit.",
-            "phone_verified": 1,
-            "email_verified": 0,
+            "name": "Medhurst, Torp and Keebler",
+            "phone": "(607) 586-4017",
+            "registration_no": "20551",
+            "first_name": "Glennie",
+            "last_name": "Ruecker",
+            "user_id": "83",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?61688",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?26405",
+            "place": "West Helenside",
+            "city": "Lake Emmaleemouth",
+            "state": "Pennsylvania",
+            "country": "Brunei Darussalam",
+            "address": "9918 Spencer Meadow",
+            "website": "cummings.biz",
+            "description": "Et reprehenderit quia quis accusantium ut quis ullam.",
+            "phone_verified": 0,
+            "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 4,
-            "name": "Koch, Ullrich and Cormier",
-            "phone": "1-234-293-9532",
-            "registration_no": "97876",
-            "first_name": "Lori",
-            "last_name": "Hessel",
-            "user_id": "56",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?31149",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?91705",
-            "place": "West Zoraburgh",
-            "city": "Port Diamondland",
-            "state": "Louisiana",
-            "country": "Slovakia (Slovak Republic)",
-            "address": "327 Brown Shoal Apt. 901",
-            "website": "kemmer.com",
-            "description": "Veniam beatae eveniet rem consequuntur qui blanditiis ex.",
+            "name": "Deckow, Fahey and Aufderhar",
+            "phone": "(947) 317-2547 x3685",
+            "registration_no": "67336",
+            "first_name": "Toy",
+            "last_name": "Wyman",
+            "user_id": "47",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?16477",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?93671",
+            "place": "Schusterport",
+            "city": "Port Ellieton",
+            "state": "Florida",
+            "country": "India",
+            "address": "2056 Gustave Via Suite 914",
+            "website": "ortiz.org",
+            "description": "Exercitationem quia reprehenderit voluptas.",
             "phone_verified": 0,
             "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 5,
-            "name": "Lueilwitz-Botsford",
-            "phone": "228-914-1417",
-            "registration_no": "46659",
-            "first_name": "Zola",
-            "last_name": "Goodwin",
-            "user_id": "61",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?74577",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?23994",
-            "place": "Lake Connie",
-            "city": "New Maximillianport",
-            "state": "Pennsylvania",
-            "country": "Bhutan",
-            "address": "2424 Gerhold Burgs",
-            "website": "stracke.biz",
-            "description": "Voluptas autem rem at ex odit quia quam.",
-            "phone_verified": 0,
+            "name": "Flatley, Huels and Ledner",
+            "phone": "413.202.0973 x2756",
+            "registration_no": "1153",
+            "first_name": "Isabell",
+            "last_name": "Borer",
+            "user_id": "34",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?93159",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?70618",
+            "place": "Port Amieview",
+            "city": "Clemmiechester",
+            "state": "Missouri",
+            "country": "Reunion",
+            "address": "8385 Kemmer Crescent Suite 522",
+            "website": "kassulke.com",
+            "description": "Quas nesciunt repellendus corporis aspernatur soluta velit odit enim.",
+            "phone_verified": 1,
             "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 6,
-            "name": "Powlowski Inc",
-            "phone": "(737) 767-7086 x8238",
-            "registration_no": "68706",
-            "first_name": "Tate",
-            "last_name": "Goyette",
-            "user_id": "13",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?70091",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?82221",
-            "place": "Vivianneside",
-            "city": "Sipesstad",
-            "state": "Hawaii",
-            "country": "Palestinian Territories",
-            "address": "4284 Ross Crest Apt. 735",
-            "website": "hane.com",
-            "description": "Dolores qui tempora tempore consequatur ut earum.",
+            "name": "Hartmann, Bashirian and Cummerata",
+            "phone": "386-478-8144",
+            "registration_no": "24267",
+            "first_name": "Kavon",
+            "last_name": "Stiedemann",
+            "user_id": "24",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?68402",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?81717",
+            "place": "Jakubowskiside",
+            "city": "Turcotteland",
+            "state": "Alabama",
+            "country": "Poland",
+            "address": "162 McDermott Branch",
+            "website": "watsica.biz",
+            "description": "Voluptatem necessitatibus delectus voluptate.",
             "phone_verified": 1,
             "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 7,
-            "name": "Hartmann and Sons",
-            "phone": "862.735.7695 x534",
-            "registration_no": "4931",
-            "first_name": "Evans",
-            "last_name": "Oberbrunner",
-            "user_id": "32",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?83957",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?80729",
-            "place": "Morarland",
-            "city": "Port Mariano",
-            "state": "Colorado",
-            "country": "Sao Tome and Principe",
-            "address": "659 Hilpert Shoal",
-            "website": "ullrich.biz",
-            "description": "Et veritatis corrupti nostrum officia illum.",
+            "name": "Jacobs, Dooley and Okuneva",
+            "phone": "1-490-679-8921 x962",
+            "registration_no": "13094",
+            "first_name": "Edward",
+            "last_name": "Schiller",
+            "user_id": "95",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?31243",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?94369",
+            "place": "East Cleveland",
+            "city": "West Allanland",
+            "state": "West Virginia",
+            "country": "Belarus",
+            "address": "3856 Bartell Avenue",
+            "website": "barton.com",
+            "description": "Fugiat repellat nisi dolorem sit deleniti.",
             "phone_verified": 1,
             "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 8,
-            "name": "Walsh, Roob and Runte",
-            "phone": "+1-557-639-8400",
-            "registration_no": "52804",
-            "first_name": "Maryjane",
-            "last_name": "Breitenberg",
-            "user_id": "3",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?68762",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?21385",
-            "place": "South Georgeview",
-            "city": "Reicherthaven",
-            "state": "North Carolina",
-            "country": "United Arab Emirates",
-            "address": "2578 Hamill Street Suite 205",
-            "website": "sipes.com",
-            "description": "Quos at voluptatem consequatur rerum dolor.",
-            "phone_verified": 1,
+            "name": "Kunze-Tromp",
+            "phone": "498.933.2026",
+            "registration_no": "14532",
+            "first_name": "Stone",
+            "last_name": "Gutmann",
+            "user_id": "13",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?77766",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?14580",
+            "place": "Andreville",
+            "city": "O'Konville",
+            "state": "New Mexico",
+            "country": "Hungary",
+            "address": "2290 Jarrod Lights Suite 707",
+            "website": "monahan.com",
+            "description": "Neque eum perferendis doloribus ipsam unde et tempora.",
+            "phone_verified": 0,
             "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 9,
-            "name": "Rau and Sons",
-            "phone": "+1-276-514-1248",
-            "registration_no": "90868",
-            "first_name": "Llewellyn",
-            "last_name": "Ratke",
-            "user_id": "50",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?84988",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?95601",
-            "place": "Keelingview",
-            "city": "West Rosemarie",
-            "state": "New Hampshire",
-            "country": "Tuvalu",
-            "address": "94839 Mann Point",
-            "website": "stiedemann.com",
-            "description": "Minus sed distinctio sunt.",
-            "phone_verified": 0,
+            "name": "Swift, Gutkowski and VonRueden",
+            "phone": "1-704-324-0902 x88248",
+            "registration_no": "53275",
+            "first_name": "Letha",
+            "last_name": "Hagenes",
+            "user_id": "87",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?24530",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?19238",
+            "place": "North Amelie",
+            "city": "Asashire",
+            "state": "Minnesota",
+            "country": "Canada",
+            "address": "580 Sally Villages Apt. 633",
+            "website": "bosco.org",
+            "description": "Non molestias unde reiciendis facilis ducimus itaque.",
+            "phone_verified": 1,
             "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 10,
-            "name": "Rath-Blick",
-            "phone": "881-338-9450",
-            "registration_no": "71199",
-            "first_name": "Christa",
-            "last_name": "O'Conner",
-            "user_id": "27",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?28017",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?12317",
-            "place": "Whiteview",
-            "city": "South Stanton",
-            "state": "Indiana",
-            "country": "Tuvalu",
-            "address": "4441 Hannah Garden Suite 350",
-            "website": "mueller.biz",
-            "description": "Commodi omnis nesciunt quia iure reiciendis dolores est.",
-            "phone_verified": 1,
+            "name": "Gulgowski, Schamberger and Jaskolski",
+            "phone": "821-469-8691",
+            "registration_no": "3410",
+            "first_name": "Jailyn",
+            "last_name": "Barrows",
+            "user_id": "56",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?79982",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?66151",
+            "place": "North Brenden",
+            "city": "Sofiashire",
+            "state": "Washington",
+            "country": "Venezuela",
+            "address": "7528 Ramiro Shores",
+            "website": "klocko.org",
+            "description": "Amet laboriosam dolorum dicta architecto ut eum.",
+            "phone_verified": 0,
             "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 11,
-            "name": "Sauer Group",
-            "phone": "+1 (743) 586-5744",
-            "registration_no": "76520",
-            "first_name": "Dejah",
-            "last_name": "Goyette",
-            "user_id": "25",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?89144",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?30976",
-            "place": "Hillshaven",
-            "city": "Vinceport",
-            "state": "Illinois",
-            "country": "Saint Pierre and Miquelon",
-            "address": "2589 Leora Forks Apt. 698",
-            "website": "zieme.info",
-            "description": "Voluptate illo veritatis commodi.",
+            "name": "Lynch Inc",
+            "phone": "+1.497.796.6061",
+            "registration_no": "76960",
+            "first_name": "Jettie",
+            "last_name": "Larkin",
+            "user_id": "83",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?29903",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?57780",
+            "place": "Vaughntown",
+            "city": "Brennonmouth",
+            "state": "Wisconsin",
+            "country": "Guinea-Bissau",
+            "address": "8190 Katelin Gardens Apt. 633",
+            "website": "spencer.com",
+            "description": "In quas voluptatem architecto neque ea.",
             "phone_verified": 1,
             "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 12,
-            "name": "Dibbert, Rogahn and Cronin",
-            "phone": "245.968.2762 x1793",
-            "registration_no": "31143",
-            "first_name": "Gerald",
-            "last_name": "Powlowski",
-            "user_id": "13",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?16894",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?48347",
-            "place": "Bethfort",
-            "city": "North Christophe",
-            "state": "New Hampshire",
-            "country": "Slovenia",
-            "address": "247 Hudson Knoll",
-            "website": "hermann.com",
-            "description": "Alias enim exercitationem ut vero ut eos.",
-            "phone_verified": 0,
+            "name": "Miller LLC",
+            "phone": "(374) 746-3975",
+            "registration_no": "47677",
+            "first_name": "Juliana",
+            "last_name": "Schulist",
+            "user_id": "95",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?41888",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?35624",
+            "place": "South Neomatown",
+            "city": "Gerholdberg",
+            "state": "Virginia",
+            "country": "Jamaica",
+            "address": "98756 Myriam Circles Apt. 286",
+            "website": "crooks.com",
+            "description": "Animi voluptas dolorum dolore.",
+            "phone_verified": 1,
             "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 13,
-            "name": "Gleason PLC",
-            "phone": "+1.717.393.6370",
-            "registration_no": "70078",
-            "first_name": "Giovanna",
-            "last_name": "Towne",
-            "user_id": "95",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?28451",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?60893",
-            "place": "New Darien",
-            "city": "Corbinstad",
-            "state": "Wisconsin",
-            "country": "Martinique",
-            "address": "4528 Cheyanne Drives",
-            "website": "gerlach.com",
-            "description": "Sequi et hic voluptatibus ipsam omnis.",
-            "phone_verified": 1,
+            "name": "Renner-Franecki",
+            "phone": "(510) 994-0322 x38091",
+            "registration_no": "73995",
+            "first_name": "Kasandra",
+            "last_name": "Brekke",
+            "user_id": "99",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?40331",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?10584",
+            "place": "West Twila",
+            "city": "Farrellberg",
+            "state": "South Dakota",
+            "country": "Antarctica (the territory South of 60 deg S)",
+            "address": "209 Gaylord Road Apt. 471",
+            "website": "farrell.com",
+            "description": "Qui aut consequatur cumque recusandae error repellendus.",
+            "phone_verified": 0,
             "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 14,
-            "name": "Kuhn-Stracke",
-            "phone": "+1-518-657-9647",
-            "registration_no": "92976",
-            "first_name": "Johnpaul",
-            "last_name": "Effertz",
-            "user_id": "16",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?25768",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?33537",
-            "place": "South Angelitafort",
-            "city": "Trantowborough",
-            "state": "North Dakota",
-            "country": "Guinea-Bissau",
-            "address": "792 McGlynn Harbor Apt. 051",
-            "website": "hand.com",
-            "description": "Inventore eos consequatur occaecati expedita accusantium.",
-            "phone_verified": 1,
+            "name": "Mertz-Wuckert",
+            "phone": "+1.780.988.9573",
+            "registration_no": "54158",
+            "first_name": "Alexys",
+            "last_name": "O'Hara",
+            "user_id": "11",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?45634",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?82792",
+            "place": "Homenickport",
+            "city": "New Quinten",
+            "state": "Oklahoma",
+            "country": "France",
+            "address": "87731 Lilian Route Apt. 688",
+            "website": "ziemann.com",
+            "description": "Possimus sit quaerat rerum ut.",
+            "phone_verified": 0,
             "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 15,
-            "name": "Medhurst, Renner and Ritchie",
-            "phone": "(402) 519-2091 x62526",
-            "registration_no": "73682",
-            "first_name": "Jeromy",
-            "last_name": "Rohan",
-            "user_id": "85",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?91984",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?84707",
-            "place": "Bridgettefort",
-            "city": "Lake Webster",
-            "state": "Michigan",
-            "country": "Azerbaijan",
-            "address": "45473 Larissa Radial Apt. 176",
-            "website": "jacobi.com",
-            "description": "Ea libero eius reiciendis repellendus ut debitis dolorem.",
+            "name": "Ankunding, Fahey and Stanton",
+            "phone": "1-998-765-1147 x5234",
+            "registration_no": "13547",
+            "first_name": "Lila",
+            "last_name": "Murray",
+            "user_id": "44",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?39581",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?24819",
+            "place": "Port Candicestad",
+            "city": "Hayesland",
+            "state": "South Carolina",
+            "country": "South Africa",
+            "address": "228 Yolanda Manors Suite 315",
+            "website": "auer.biz",
+            "description": "Consectetur odio autem quia autem voluptas.",
             "phone_verified": 1,
-            "email_verified": 0,
+            "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 16,
-            "name": "Stokes and Sons",
-            "phone": "1-476-512-1471 x77192",
-            "registration_no": "81198",
-            "first_name": "Corine",
-            "last_name": "Greenfelder",
-            "user_id": "20",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?94973",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?81515",
-            "place": "West Malvinaville",
-            "city": "Randyfort",
-            "state": "Tennessee",
-            "country": "Togo",
-            "address": "651 Streich Skyway Suite 771",
-            "website": "bins.net",
-            "description": "Ipsam sed omnis voluptatem et laboriosam totam.",
+            "name": "Homenick Ltd",
+            "phone": "+1-550-320-8752",
+            "registration_no": "73115",
+            "first_name": "Miracle",
+            "last_name": "Langworth",
+            "user_id": "46",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?73012",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?14693",
+            "place": "Fritschside",
+            "city": "New Kyleview",
+            "state": "Connecticut",
+            "country": "Venezuela",
+            "address": "919 Farrell Unions Apt. 852",
+            "website": "muller.com",
+            "description": "Voluptatibus culpa voluptatem perspiciatis quod impedit accusantium.",
             "phone_verified": 0,
             "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 17,
-            "name": "Thompson Ltd",
-            "phone": "410.316.2477 x693",
-            "registration_no": "44335",
-            "first_name": "Jess",
-            "last_name": "Considine",
-            "user_id": "80",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?10647",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?18607",
-            "place": "South Emerson",
-            "city": "New Immanuel",
-            "state": "Oklahoma",
-            "country": "Costa Rica",
-            "address": "895 Ondricka Turnpike Suite 152",
-            "website": "bartell.info",
-            "description": "Explicabo inventore aspernatur ducimus est.",
-            "phone_verified": 1,
+            "name": "Zboncak, Abbott and Schuppe",
+            "phone": "1-682-497-6097",
+            "registration_no": "15448",
+            "first_name": "Otilia",
+            "last_name": "Koelpin",
+            "user_id": "21",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?39251",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?66926",
+            "place": "East Garnett",
+            "city": "Trevorland",
+            "state": "Arkansas",
+            "country": "Portugal",
+            "address": "80853 Grant Extensions Apt. 281",
+            "website": "streich.org",
+            "description": "Quis itaque iusto dolores est.",
+            "phone_verified": 0,
             "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 18,
-            "name": "Nitzsche and Sons",
-            "phone": "(356) 420-1008 x9645",
-            "registration_no": "29193",
-            "first_name": "Nia",
-            "last_name": "Hickle",
-            "user_id": "66",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?60454",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?59107",
-            "place": "East Julianne",
-            "city": "South Geraldine",
-            "state": "Utah",
-            "country": "Dominican Republic",
-            "address": "37180 Zena Forest",
-            "website": "grimes.com",
-            "description": "Magni quod eos corporis cumque repudiandae est.",
+            "name": "Block, Waelchi and Marvin",
+            "phone": "(494) 479-7663 x7692",
+            "registration_no": "28181",
+            "first_name": "Torrey",
+            "last_name": "Harber",
+            "user_id": "43",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?53091",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?15306",
+            "place": "Gulgowskishire",
+            "city": "South Pietro",
+            "state": "South Carolina",
+            "country": "Oman",
+            "address": "239 Webster Squares Apt. 574",
+            "website": "nicolas.com",
+            "description": "Consequuntur velit nulla eum et consequatur illum esse.",
             "phone_verified": 1,
             "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 19,
-            "name": "Pfeffer, Altenwerth and Ullrich",
-            "phone": "323.340.3572 x044",
-            "registration_no": "14318",
-            "first_name": "Dangelo",
-            "last_name": "Jacobs",
-            "user_id": "31",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?72518",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?47693",
-            "place": "Lake Janychester",
-            "city": "Runolfsdottirfort",
-            "state": "Kansas",
-            "country": "Ireland",
-            "address": "4310 Turner Wall",
-            "website": "strosin.com",
-            "description": "In eum maiores error voluptatem.",
-            "phone_verified": 0,
+            "name": "Kris, Armstrong and Collins",
+            "phone": "+1.418.700.1010",
+            "registration_no": "96628",
+            "first_name": "Kathleen",
+            "last_name": "Vandervort",
+            "user_id": "80",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?31747",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?46227",
+            "place": "East Davonmouth",
+            "city": "Tressiemouth",
+            "state": "Indiana",
+            "country": "Peru",
+            "address": "604 Jerad Port",
+            "website": "runolfsson.com",
+            "description": "Ea sed et debitis voluptate soluta.",
+            "phone_verified": 1,
             "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         },
         {
             "id": 20,
-            "name": "Ward-Erdman",
-            "phone": "583.968.3019",
-            "registration_no": "13965",
-            "first_name": "Luciano",
-            "last_name": "Dibbert",
-            "user_id": "39",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?56421",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?90241",
-            "place": "Wuckerthaven",
-            "city": "Lake Amaya",
-            "state": "Illinois",
-            "country": "Isle of Man",
-            "address": "31069 Hickle Cliffs Suite 379",
-            "website": "cremin.com",
-            "description": "Exercitationem possimus quas non et iste error et.",
+            "name": "Mitchell-Barton",
+            "phone": "542-268-2673 x71019",
+            "registration_no": "3338",
+            "first_name": "Helena",
+            "last_name": "Thiel",
+            "user_id": "58",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?22484",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?69756",
+            "place": "Buckridgehaven",
+            "city": "Janessaton",
+            "state": "Washington",
+            "country": "Honduras",
+            "address": "36754 Sporer View Apt. 668",
+            "website": "walsh.info",
+            "description": "Eum aperiam totam molestiae veritatis.",
             "phone_verified": 0,
-            "email_verified": 0,
+            "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-24 16:37:17",
-            "updated_at": "2018-02-24 16:37:17"
+            "created_at": "2018-02-25 20:27:58",
+            "updated_at": "2018-02-25 20:27:58"
         }
     ],
     "first_page_url": "http:\/\/localhost\/api\/v1\/resturants?page=1",
@@ -4025,337 +1701,57 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "id": 1,
+    "name": "Roob, Schiller and Barrows",
+    "phone": "+1-932-342-2954",
+    "registration_no": "8923",
+    "first_name": "Lucy",
+    "last_name": "Bahringer",
+    "user_id": "97",
+    "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?22931",
+    "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?90873",
+    "place": "Evangelinetown",
+    "city": "Klingville",
+    "state": "Kentucky",
+    "country": "Luxembourg",
+    "address": "50310 Pierre Key",
+    "website": "kerluke.com",
+    "description": "Deserunt qui tenetur voluptatem.",
+    "phone_verified": 0,
+    "email_verified": 0,
+    "deleted_at": null,
+    "created_at": "2018-02-25 20:27:58",
+    "updated_at": "2018-02-25 20:27:58",
+    "items": {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 107,
+                "name": "Annamae",
+                "resturant_id": 1,
+                "image": "https:\/\/lorempixel.com\/150\/150\/food\/?72231",
+                "description": "Sit praesentium quod doloribus.",
+                "price": 46,
+                "user_id": 1,
+                "measurement": "bowl",
+                "quantity": 6,
+                "deleted_at": null,
+                "created_at": "2018-02-25 20:27:58",
+                "updated_at": "2018-02-25 20:27:58",
+                "formatted_price": "GHC 46.00"
+            }
+        ],
+        "first_page_url": "http:\/\/localhost\/api\/v1\/resturants\/1?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http:\/\/localhost\/api\/v1\/resturants\/1?page=1",
+        "next_page_url": null,
+        "path": "http:\/\/localhost\/api\/v1\/resturants\/1",
+        "per_page": 20,
+        "prev_page_url": null,
+        "to": 1,
+        "total": 1
+    }
 }
 ```
 
@@ -4402,337 +1798,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "message": "Unauthenticated."
 }
 ```
 
@@ -4745,7 +1811,7 @@ $.ajax(settings).done(function (response) {
 <!-- END_aa558d00f323830cf03c0cdf62bf4f4f -->
 
 <!-- START_2986fe2644729ef9fa55818efeeda18c -->
-## Verify OTP
+## Verify OTP Code
 
 Verify the OTP code that was sent to the authenticated user.
 
@@ -4754,8 +1820,8 @@ Verify the OTP code that was sent to the authenticated user.
 ```bash
 curl -X POST "http://booconnect.run/api/v1/verify" \
 -H "Accept: application/json" \
-    -d "phone"="incidunt" \
-    -d "token"="incidunt" \
+    -d "phone"="938" \
+    -d "token"="938" \
 
 ```
 
@@ -4766,8 +1832,8 @@ var settings = {
     "url": "http://booconnect.run/api/v1/verify",
     "method": "POST",
     "data": {
-        "phone": "incidunt",
-        "token": "incidunt"
+        "phone": 938,
+        "token": 938
 },
     "headers": {
         "accept": "application/json"
@@ -4787,8 +1853,8 @@ $.ajax(settings).done(function (response) {
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    phone | string |  required  | 
-    token | string |  required  | Valid user token
+    phone | numeric |  required  | 
+    token | numeric |  required  | Valid user token
 
 <!-- END_2986fe2644729ef9fa55818efeeda18c -->
 
@@ -4822,337 +1888,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "message": "Unauthenticated."
 }
 ```
 
@@ -5175,7 +1911,7 @@ This code will expire after 5 minuites.
 ```bash
 curl -X PUT "http://booconnect.run/api/v1/verify/{verify}" \
 -H "Accept: application/json" \
-    -d "phone"="laboriosam" \
+    -d "phone"="4903" \
 
 ```
 
@@ -5186,7 +1922,7 @@ var settings = {
     "url": "http://booconnect.run/api/v1/verify/{verify}",
     "method": "PUT",
     "data": {
-        "phone": "laboriosam"
+        "phone": 4903
 },
     "headers": {
         "accept": "application/json"
@@ -5208,7 +1944,7 @@ $.ajax(settings).done(function (response) {
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    phone | string |  required  | 
+    phone | numeric |  required  | 
 
 <!-- END_3b30ae7fc7fb9e3fea044b298668df82 -->
 
@@ -5247,337 +1983,7 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Too Many Attempts.",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-    "line": 124,
-    "trace": [
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 52,
-            "function": "buildException",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 661,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 636,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 602,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 591,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 30,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 46,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 149,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 102,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 139,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
-            "line": 125,
-            "function": "callRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
-            "line": 79,
-            "function": "getRouteResponse",
-            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 264,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
-            "line": 85,
-            "function": "processLaravelRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 564,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 252,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 865,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 241,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
-            "line": 143,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 88,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 121,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "message": "Unauthenticated."
 }
 ```
 
@@ -5590,7 +1996,7 @@ $.ajax(settings).done(function (response) {
 <!-- END_3f8d78a807f16aa9a1195e047bf25b96 -->
 
 <!-- START_3e7cbd9fc15711ca2f1ba22883c3187f -->
-## Add item
+## Add Wishlist item
 
 Add an item to wishlist
 
@@ -5598,7 +2004,9 @@ Add an item to wishlist
 
 ```bash
 curl -X POST "http://booconnect.run/api/v1/wishlist" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "item_id"="1715927" \
+
 ```
 
 ```javascript
@@ -5607,6 +2015,9 @@ var settings = {
     "crossDomain": true,
     "url": "http://booconnect.run/api/v1/wishlist",
     "method": "POST",
+    "data": {
+        "item_id": 1715927
+},
     "headers": {
         "accept": "application/json"
     }
@@ -5621,6 +2032,11 @@ $.ajax(settings).done(function (response) {
 ### HTTP Request
 `POST api/v1/wishlist`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    item_id | numeric |  required  | Valid item id
 
 <!-- END_3e7cbd9fc15711ca2f1ba22883c3187f -->
 
@@ -5658,4 +2074,68 @@ $.ajax(settings).done(function (response) {
 
 
 <!-- END_a5f004f583dea1e2c1062ef16977de92 -->
+
+#general
+<!-- START_e19c9e19f1f1208528a69cd2ef4c01dd -->
+## Search
+
+This will allow the clients to seach for items, resturants
+or a combination of both.
+
+> Example request:
+
+```bash
+curl -X GET "http://booconnect.run/api/v1/search" \
+-H "Accept: application/json" \
+    -d "query"="aut" \
+    -d "type"="aut" \
+
+```
+
+```javascript
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://booconnect.run/api/v1/search",
+    "method": "GET",
+    "data": {
+        "query": "aut",
+        "type": "aut"
+},
+    "headers": {
+        "accept": "application/json"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+```
+
+> Example response:
+
+```json
+{
+    "message": "The given data was invalid.",
+    "errors": {
+        "query": [
+            "The query field is required."
+        ]
+    }
+}
+```
+
+### HTTP Request
+`GET api/v1/search`
+
+`HEAD api/v1/search`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    query | string |  required  | Maximum: `255`
+    type | string |  optional  | 
+
+<!-- END_e19c9e19f1f1208528a69cd2ef4c01dd -->
 
