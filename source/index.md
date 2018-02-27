@@ -1,22 +1,32 @@
 ---
-title: API Reference
+title: BooConnect API Reference
 
 language_tabs:
 - bash
 - javascript
 
 includes:
+- errors
 
 search: true
 
 toc_footers:
-- <a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a>
+- <a href="#">Some footer message comes here.</a>
 ---
 <!-- START_INFO -->
 # Info
 
-Welcome to the generated API reference.
+Here's tsshe complete documentaiton of the avialable API Endpoints.
 [Get Postman Collection](http://booconnect.run/docs/collection.json)
+
+# Authentication
+
+BooConnect uses API keys to allow access to the API.
+A new api key will be granted when loed in and thereafter, the server will expect a stateless call with the api key set as an authorization bearer.
+
+The BooConnect server expects for the API key to be included in all API requests to the server in a header that looks like the following:
+
+Authorization: meowmeowmeow
 <!-- END_INFO -->
 
 #Account
@@ -340,7 +350,7 @@ $.ajax(settings).done(function (response) {
 
 #Items
 
-Items sold in resturants registered on BooConnect
+Items sold in restaurants registered on BooConnect
 <!-- START_6cb5fef850c2ae6d0de134a3409a8f1a -->
 ## Query All Items
 Get a list of paginated items.
@@ -376,33 +386,33 @@ $.ajax(settings).done(function (response) {
     "data": [
         {
             "id": 1,
-            "name": "Isabell",
-            "resturant_id": 2,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?19372",
-            "description": "Quaerat tenetur enim ea est a tempora ullam explicabo.",
+            "name": "Matteo",
+            "restaurant_id": 2,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?13605",
+            "description": "Unde eum delectus tempora laudantium cumque.",
             "price": 2,
             "user_id": 1,
-            "measurement": "plate",
-            "quantity": 2,
+            "measurement": "bowl",
+            "quantity": 1,
             "deleted_at": null,
-            "created_at": "2018-02-26 02:00:06",
-            "updated_at": "2018-02-26 02:00:06",
+            "created_at": "2018-02-27 22:07:56",
+            "updated_at": "2018-02-27 22:07:56",
             "formatted_price": "GHC 2.00"
         },
         {
             "id": 2,
-            "name": "Antonia",
-            "resturant_id": 1,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?32909",
-            "description": "Rerum officia dolores deleniti possimus sint officia qui ea.",
-            "price": 2,
+            "name": "Lia",
+            "restaurant_id": 2,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?25062",
+            "description": "Est minus ad aut a ut numquam qui.",
+            "price": 1,
             "user_id": 1,
             "measurement": "bowl",
             "quantity": 2,
             "deleted_at": null,
-            "created_at": "2018-02-26 02:00:06",
-            "updated_at": "2018-02-26 02:00:06",
-            "formatted_price": "GHC 2.00"
+            "created_at": "2018-02-27 22:07:56",
+            "updated_at": "2018-02-27 22:07:56",
+            "formatted_price": "GHC 1.00"
         }
     ],
     "first_page_url": "http:\/\/localhost\/api\/v1\/items?page=1",
@@ -460,17 +470,17 @@ $.ajax(settings).done(function (response) {
 ```json
 {
     "id": 1,
-    "name": "Isabell",
-    "resturant_id": 2,
-    "image": "https:\/\/lorempixel.com\/150\/150\/food\/?19372",
-    "description": "Quaerat tenetur enim ea est a tempora ullam explicabo.",
+    "name": "Matteo",
+    "restaurant_id": 2,
+    "image": "https:\/\/lorempixel.com\/150\/150\/food\/?13605",
+    "description": "Unde eum delectus tempora laudantium cumque.",
     "price": 2,
     "user_id": 1,
-    "measurement": "plate",
-    "quantity": 2,
+    "measurement": "bowl",
+    "quantity": 1,
     "deleted_at": null,
-    "created_at": "2018-02-26 02:00:06",
-    "updated_at": "2018-02-26 02:00:06",
+    "created_at": "2018-02-27 22:07:56",
+    "updated_at": "2018-02-27 22:07:56",
     "formatted_price": "GHC 2.00",
     "pictures": null
 }
@@ -609,18 +619,18 @@ $.ajax(settings).done(function (response) {
 
 <!-- END_f34ad9d71f18dd67576cc6db60268192 -->
 
-#Resturant
+#Restaurant
 
-Lists resturants registered on booconnect
-<!-- START_e7cf6c6948344237400bf6ec99c2ee20 -->
-## Query Resturants.
+Lists restaurants registered on booconnect
+<!-- START_d4047c448c5be09c76c8b41d01754863 -->
+## Query Restaurants.
 
-Get a paginated result of all resturants
+Get a paginated result of all restaurants
 
 > Example request:
 
 ```bash
-curl -X GET "http://booconnect.run/api/v1/resturants" \
+curl -X GET "http://booconnect.run/api/v1/restaurants" \
 -H "Accept: application/json"
 ```
 
@@ -628,7 +638,7 @@ curl -X GET "http://booconnect.run/api/v1/resturants" \
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/resturants",
+    "url": "http://booconnect.run/api/v1/restaurants",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -648,57 +658,57 @@ $.ajax(settings).done(function (response) {
     "data": [
         {
             "id": 1,
-            "name": "Barton, Bergnaum and Hagenes",
-            "phone": "(757) 257-0469 x241",
-            "registration_no": "41719",
-            "first_name": "Tabitha",
-            "last_name": "McGlynn",
+            "name": "Schoen Inc",
+            "phone": "1-737-748-0032 x76427",
+            "registration_no": "13291",
+            "first_name": "Hassan",
+            "last_name": "Kutch",
             "user_id": "2",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?84419",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?46456",
-            "place": "Caraberg",
-            "city": "Lake Melyna",
-            "state": "South Dakota",
-            "country": "Japan",
-            "address": "84880 Quinton Heights Apt. 770",
-            "website": "torphy.com",
-            "description": "Nam maxime accusantium rerum molestiae nam.",
-            "phone_verified": 0,
-            "email_verified": 1,
-            "deleted_at": null,
-            "created_at": "2018-02-26 02:00:06",
-            "updated_at": "2018-02-26 02:00:06"
-        },
-        {
-            "id": 2,
-            "name": "O'Conner, Breitenberg and Collins",
-            "phone": "283.766.0758",
-            "registration_no": "32607",
-            "first_name": "Jacquelyn",
-            "last_name": "Tillman",
-            "user_id": "1",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?81227",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?66432",
-            "place": "New Mya",
-            "city": "Wernerview",
-            "state": "Arkansas",
-            "country": "China",
-            "address": "15570 Cassin Route",
-            "website": "zieme.com",
-            "description": "Suscipit perspiciatis qui placeat et sit minima et eum.",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?19872",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?41472",
+            "place": "North Jody",
+            "city": "Spencermouth",
+            "state": "Minnesota",
+            "country": "Iran",
+            "address": "3208 Gerardo Ville",
+            "website": "witting.info",
+            "description": "Modi voluptatem esse error consequatur non consequatur et.",
             "phone_verified": 0,
             "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-02-26 02:00:06",
-            "updated_at": "2018-02-26 02:00:06"
+            "created_at": "2018-02-27 22:07:56",
+            "updated_at": "2018-02-27 22:07:56"
+        },
+        {
+            "id": 2,
+            "name": "Heaney Ltd",
+            "phone": "732.965.1421 x81414",
+            "registration_no": "28509",
+            "first_name": "Camille",
+            "last_name": "Murray",
+            "user_id": "2",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?47895",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?91560",
+            "place": "Thielfurt",
+            "city": "Prohaskatown",
+            "state": "Alabama",
+            "country": "Saint Pierre and Miquelon",
+            "address": "35576 Florida Light",
+            "website": "kiehn.com",
+            "description": "Et placeat quisquam quos aut.",
+            "phone_verified": 1,
+            "email_verified": 1,
+            "deleted_at": null,
+            "created_at": "2018-02-27 22:07:56",
+            "updated_at": "2018-02-27 22:07:56"
         }
     ],
-    "first_page_url": "http:\/\/localhost\/api\/v1\/resturants?page=1",
+    "first_page_url": "http:\/\/localhost\/api\/v1\/restaurants?page=1",
     "from": 1,
     "last_page": 1,
-    "last_page_url": "http:\/\/localhost\/api\/v1\/resturants?page=1",
+    "last_page_url": "http:\/\/localhost\/api\/v1\/restaurants?page=1",
     "next_page_url": null,
-    "path": "http:\/\/localhost\/api\/v1\/resturants",
+    "path": "http:\/\/localhost\/api\/v1\/restaurants",
     "per_page": 20,
     "prev_page_url": null,
     "to": 2,
@@ -707,21 +717,21 @@ $.ajax(settings).done(function (response) {
 ```
 
 ### HTTP Request
-`GET api/v1/resturants`
+`GET api/v1/restaurants`
 
-`HEAD api/v1/resturants`
+`HEAD api/v1/restaurants`
 
 
-<!-- END_e7cf6c6948344237400bf6ec99c2ee20 -->
+<!-- END_d4047c448c5be09c76c8b41d01754863 -->
 
-<!-- START_5c475d198dde109f40d350154d38700d -->
-## Get Resturant
-A resturant resource with pagination of it&#039;s items
+<!-- START_e0300b8b707c1db9b160b9d5a851ae0a -->
+## Get Restaurant
+A restaurant resource with pagination of it&#039;s items
 
 > Example request:
 
 ```bash
-curl -X GET "http://booconnect.run/api/v1/resturants/{resturant}" \
+curl -X GET "http://booconnect.run/api/v1/restaurants/{restaurant}" \
 -H "Accept: application/json"
 ```
 
@@ -729,7 +739,7 @@ curl -X GET "http://booconnect.run/api/v1/resturants/{resturant}" \
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/resturants/{resturant}",
+    "url": "http://booconnect.run/api/v1/restaurants/{restaurant}",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -746,74 +756,58 @@ $.ajax(settings).done(function (response) {
 ```json
 {
     "id": 1,
-    "name": "Barton, Bergnaum and Hagenes",
-    "phone": "(757) 257-0469 x241",
-    "registration_no": "41719",
-    "first_name": "Tabitha",
-    "last_name": "McGlynn",
+    "name": "Schoen Inc",
+    "phone": "1-737-748-0032 x76427",
+    "registration_no": "13291",
+    "first_name": "Hassan",
+    "last_name": "Kutch",
     "user_id": "2",
-    "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?84419",
-    "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?46456",
-    "place": "Caraberg",
-    "city": "Lake Melyna",
-    "state": "South Dakota",
-    "country": "Japan",
-    "address": "84880 Quinton Heights Apt. 770",
-    "website": "torphy.com",
-    "description": "Nam maxime accusantium rerum molestiae nam.",
+    "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?19872",
+    "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?41472",
+    "place": "North Jody",
+    "city": "Spencermouth",
+    "state": "Minnesota",
+    "country": "Iran",
+    "address": "3208 Gerardo Ville",
+    "website": "witting.info",
+    "description": "Modi voluptatem esse error consequatur non consequatur et.",
     "phone_verified": 0,
-    "email_verified": 1,
+    "email_verified": 0,
     "deleted_at": null,
-    "created_at": "2018-02-26 02:00:06",
-    "updated_at": "2018-02-26 02:00:06",
+    "created_at": "2018-02-27 22:07:56",
+    "updated_at": "2018-02-27 22:07:56",
     "items": {
         "current_page": 1,
-        "data": [
-            {
-                "id": 2,
-                "name": "Antonia",
-                "resturant_id": 1,
-                "image": "https:\/\/lorempixel.com\/150\/150\/food\/?32909",
-                "description": "Rerum officia dolores deleniti possimus sint officia qui ea.",
-                "price": 2,
-                "user_id": 1,
-                "measurement": "bowl",
-                "quantity": 2,
-                "deleted_at": null,
-                "created_at": "2018-02-26 02:00:06",
-                "updated_at": "2018-02-26 02:00:06",
-                "formatted_price": "GHC 2.00"
-            }
-        ],
-        "first_page_url": "http:\/\/localhost\/api\/v1\/resturants\/1?page=1",
-        "from": 1,
+        "data": [],
+        "first_page_url": "http:\/\/localhost\/api\/v1\/restaurants\/1?page=1",
+        "from": null,
         "last_page": 1,
-        "last_page_url": "http:\/\/localhost\/api\/v1\/resturants\/1?page=1",
+        "last_page_url": "http:\/\/localhost\/api\/v1\/restaurants\/1?page=1",
         "next_page_url": null,
-        "path": "http:\/\/localhost\/api\/v1\/resturants\/1",
+        "path": "http:\/\/localhost\/api\/v1\/restaurants\/1",
         "per_page": 20,
         "prev_page_url": null,
-        "to": 1,
-        "total": 1
+        "to": null,
+        "total": 0
     }
 }
 ```
 
 ### HTTP Request
-`GET api/v1/resturants/{resturant}`
+`GET api/v1/restaurants/{restaurant}`
 
-`HEAD api/v1/resturants/{resturant}`
+`HEAD api/v1/restaurants/{restaurant}`
 
 
-<!-- END_5c475d198dde109f40d350154d38700d -->
+<!-- END_e0300b8b707c1db9b160b9d5a851ae0a -->
 
 #Search
 
-Search for either Resturants or Items
+Search for either Restaurants or Items
 <!-- START_e19c9e19f1f1208528a69cd2ef4c01dd -->
 ## Search
 
-This will allow the clients to seach for items, resturants
+This will allow the clients to seach for items, restaurants
 or a combination of both.
 
 > Example request:
