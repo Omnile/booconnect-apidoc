@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>BooConnect API Reference</title>
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/all.js"></script>
@@ -37,7 +37,7 @@
               <div id="toc">
       </div>
                     <ul class="toc-footer">
-                                  <li><a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a></li>
+                                  <li><a href="#">Some footer message comes here.</a></li>
                             </ul>
             </div>
     <div class="page-wrapper">
@@ -45,8 +45,13 @@
       <div class="content">
           <!-- START_INFO -->
 <h1>Info</h1>
-<p>Welcome to the generated API reference.
+<p>Here's tsshe complete documentaiton of the avialable API Endpoints.
 <a href="http://booconnect.run/docs/collection.json">Get Postman Collection</a></p>
+<h1>Authentication</h1>
+<p>BooConnect uses API keys to allow access to the API.
+A new api key will be granted when loed in and thereafter, the server will expect a stateless call with the api key set as an authorization bearer.</p>
+<p>The BooConnect server expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<p>Authorization: meowmeowmeow</p>
 <!-- END_INFO -->
 <h1>Account</h1>
 <p>Account Endpoints</p>
@@ -362,7 +367,7 @@ $.ajax(settings).done(function (response) {
 <p><code>DELETE api/v1/cart/{cart}</code></p>
 <!-- END_a94e71cd52c25987988db15effc17eb8 -->
 <h1>Items</h1>
-<p>Items sold in resturants registered on BooConnect</p>
+<p>Items sold in restaurants registered on BooConnect</p>
 <!-- START_6cb5fef850c2ae6d0de134a3409a8f1a -->
 <h2>Query All Items</h2>
 <p>Get a list of paginated items.</p>
@@ -392,33 +397,33 @@ $.ajax(settings).done(function (response) {
     "data": [
         {
             "id": 1,
-            "name": "Isabell",
-            "resturant_id": 2,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?19372",
-            "description": "Quaerat tenetur enim ea est a tempora ullam explicabo.",
-            "price": 2,
+            "name": "Dale",
+            "restaurant_id": 2,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?40657",
+            "description": "Dignissimos labore sit vel et exercitationem nisi expedita illum.",
+            "price": 1,
             "user_id": 1,
-            "measurement": "plate",
-            "quantity": 2,
+            "measurement": "bowl",
+            "quantity": 1,
             "deleted_at": null,
-            "created_at": "2018-02-26 02:00:06",
-            "updated_at": "2018-02-26 02:00:06",
-            "formatted_price": "GHC 2.00"
+            "created_at": "2018-02-27 18:39:32",
+            "updated_at": "2018-02-27 18:39:32",
+            "formatted_price": "GHC 1.00"
         },
         {
             "id": 2,
-            "name": "Antonia",
-            "resturant_id": 1,
-            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?32909",
-            "description": "Rerum officia dolores deleniti possimus sint officia qui ea.",
-            "price": 2,
+            "name": "Beryl",
+            "restaurant_id": 1,
+            "image": "https:\/\/lorempixel.com\/150\/150\/food\/?19620",
+            "description": "Aut temporibus magnam at magnam minima omnis occaecati beatae.",
+            "price": 1,
             "user_id": 1,
             "measurement": "bowl",
             "quantity": 2,
             "deleted_at": null,
-            "created_at": "2018-02-26 02:00:06",
-            "updated_at": "2018-02-26 02:00:06",
-            "formatted_price": "GHC 2.00"
+            "created_at": "2018-02-27 18:39:32",
+            "updated_at": "2018-02-27 18:39:32",
+            "formatted_price": "GHC 1.00"
         }
     ],
     "first_page_url": "http:\/\/localhost\/api\/v1\/items?page=1",
@@ -463,18 +468,18 @@ $.ajax(settings).done(function (response) {
 </blockquote>
 <pre><code class="language-json">{
     "id": 1,
-    "name": "Isabell",
-    "resturant_id": 2,
-    "image": "https:\/\/lorempixel.com\/150\/150\/food\/?19372",
-    "description": "Quaerat tenetur enim ea est a tempora ullam explicabo.",
-    "price": 2,
+    "name": "Dale",
+    "restaurant_id": 2,
+    "image": "https:\/\/lorempixel.com\/150\/150\/food\/?40657",
+    "description": "Dignissimos labore sit vel et exercitationem nisi expedita illum.",
+    "price": 1,
     "user_id": 1,
-    "measurement": "plate",
-    "quantity": 2,
+    "measurement": "bowl",
+    "quantity": 1,
     "deleted_at": null,
-    "created_at": "2018-02-26 02:00:06",
-    "updated_at": "2018-02-26 02:00:06",
-    "formatted_price": "GHC 2.00",
+    "created_at": "2018-02-27 18:39:32",
+    "updated_at": "2018-02-27 18:39:32",
+    "formatted_price": "GHC 1.00",
     "pictures": null
 }</code></pre>
 <h3>HTTP Request</h3>
@@ -569,20 +574,20 @@ $.ajax(settings).done(function (response) {
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/orders/{order}</code></p>
 <!-- END_f34ad9d71f18dd67576cc6db60268192 -->
-<h1>Resturant</h1>
-<p>Lists resturants registered on booconnect</p>
-<!-- START_e7cf6c6948344237400bf6ec99c2ee20 -->
-<h2>Query Resturants.</h2>
-<p>Get a paginated result of all resturants</p>
+<h1>Restaurant</h1>
+<p>Lists restaurants registered on booconnect</p>
+<!-- START_d4047c448c5be09c76c8b41d01754863 -->
+<h2>Query Restaurants.</h2>
+<p>Get a paginated result of all restaurants</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET "http://booconnect.run/api/v1/resturants" \
+<pre><code class="language-bash">curl -X GET "http://booconnect.run/api/v1/restaurants" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/resturants",
+    "url": "http://booconnect.run/api/v1/restaurants",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -600,78 +605,78 @@ $.ajax(settings).done(function (response) {
     "data": [
         {
             "id": 1,
-            "name": "Barton, Bergnaum and Hagenes",
-            "phone": "(757) 257-0469 x241",
-            "registration_no": "41719",
-            "first_name": "Tabitha",
-            "last_name": "McGlynn",
-            "user_id": "2",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?84419",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?46456",
-            "place": "Caraberg",
-            "city": "Lake Melyna",
-            "state": "South Dakota",
-            "country": "Japan",
-            "address": "84880 Quinton Heights Apt. 770",
-            "website": "torphy.com",
-            "description": "Nam maxime accusantium rerum molestiae nam.",
-            "phone_verified": 0,
+            "name": "Stamm and Sons",
+            "phone": "(437) 952-5288 x18469",
+            "registration_no": "94529",
+            "first_name": "Jameson",
+            "last_name": "Swift",
+            "user_id": "1",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?64106",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?57201",
+            "place": "Effertzbury",
+            "city": "Martyport",
+            "state": "Georgia",
+            "country": "Bahrain",
+            "address": "454 Cummings Road",
+            "website": "lesch.com",
+            "description": "Accusamus ipsam sit laudantium dolorum.",
+            "phone_verified": 1,
             "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-26 02:00:06",
-            "updated_at": "2018-02-26 02:00:06"
+            "created_at": "2018-02-27 18:39:32",
+            "updated_at": "2018-02-27 18:39:32"
         },
         {
             "id": 2,
-            "name": "O'Conner, Breitenberg and Collins",
-            "phone": "283.766.0758",
-            "registration_no": "32607",
-            "first_name": "Jacquelyn",
-            "last_name": "Tillman",
-            "user_id": "1",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?81227",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?66432",
-            "place": "New Mya",
-            "city": "Wernerview",
-            "state": "Arkansas",
-            "country": "China",
-            "address": "15570 Cassin Route",
-            "website": "zieme.com",
-            "description": "Suscipit perspiciatis qui placeat et sit minima et eum.",
+            "name": "Rempel-Reichel",
+            "phone": "565.252.8910 x0526",
+            "registration_no": "24647",
+            "first_name": "Daniella",
+            "last_name": "Ullrich",
+            "user_id": "2",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?17051",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?10527",
+            "place": "West Tara",
+            "city": "New Nichole",
+            "state": "Minnesota",
+            "country": "Haiti",
+            "address": "50452 Mertz Rapids",
+            "website": "brown.com",
+            "description": "Minus ut consequatur dolore laboriosam omnis vitae.",
             "phone_verified": 0,
-            "email_verified": 0,
+            "email_verified": 1,
             "deleted_at": null,
-            "created_at": "2018-02-26 02:00:06",
-            "updated_at": "2018-02-26 02:00:06"
+            "created_at": "2018-02-27 18:39:32",
+            "updated_at": "2018-02-27 18:39:32"
         }
     ],
-    "first_page_url": "http:\/\/localhost\/api\/v1\/resturants?page=1",
+    "first_page_url": "http:\/\/localhost\/api\/v1\/restaurants?page=1",
     "from": 1,
     "last_page": 1,
-    "last_page_url": "http:\/\/localhost\/api\/v1\/resturants?page=1",
+    "last_page_url": "http:\/\/localhost\/api\/v1\/restaurants?page=1",
     "next_page_url": null,
-    "path": "http:\/\/localhost\/api\/v1\/resturants",
+    "path": "http:\/\/localhost\/api\/v1\/restaurants",
     "per_page": 20,
     "prev_page_url": null,
     "to": 2,
     "total": 2
 }</code></pre>
 <h3>HTTP Request</h3>
-<p><code>GET api/v1/resturants</code></p>
-<p><code>HEAD api/v1/resturants</code></p>
-<!-- END_e7cf6c6948344237400bf6ec99c2ee20 -->
-<!-- START_5c475d198dde109f40d350154d38700d -->
-<h2>Get Resturant</h2>
-<p>A resturant resource with pagination of it&#039;s items</p>
+<p><code>GET api/v1/restaurants</code></p>
+<p><code>HEAD api/v1/restaurants</code></p>
+<!-- END_d4047c448c5be09c76c8b41d01754863 -->
+<!-- START_e0300b8b707c1db9b160b9d5a851ae0a -->
+<h2>Get Restaurant</h2>
+<p>A restaurant resource with pagination of it&#039;s items</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET "http://booconnect.run/api/v1/resturants/{resturant}" \
+<pre><code class="language-bash">curl -X GET "http://booconnect.run/api/v1/restaurants/{restaurant}" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://booconnect.run/api/v1/resturants/{resturant}",
+    "url": "http://booconnect.run/api/v1/restaurants/{restaurant}",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -686,51 +691,51 @@ $.ajax(settings).done(function (response) {
 </blockquote>
 <pre><code class="language-json">{
     "id": 1,
-    "name": "Barton, Bergnaum and Hagenes",
-    "phone": "(757) 257-0469 x241",
-    "registration_no": "41719",
-    "first_name": "Tabitha",
-    "last_name": "McGlynn",
-    "user_id": "2",
-    "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?84419",
-    "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?46456",
-    "place": "Caraberg",
-    "city": "Lake Melyna",
-    "state": "South Dakota",
-    "country": "Japan",
-    "address": "84880 Quinton Heights Apt. 770",
-    "website": "torphy.com",
-    "description": "Nam maxime accusantium rerum molestiae nam.",
-    "phone_verified": 0,
+    "name": "Stamm and Sons",
+    "phone": "(437) 952-5288 x18469",
+    "registration_no": "94529",
+    "first_name": "Jameson",
+    "last_name": "Swift",
+    "user_id": "1",
+    "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?64106",
+    "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?57201",
+    "place": "Effertzbury",
+    "city": "Martyport",
+    "state": "Georgia",
+    "country": "Bahrain",
+    "address": "454 Cummings Road",
+    "website": "lesch.com",
+    "description": "Accusamus ipsam sit laudantium dolorum.",
+    "phone_verified": 1,
     "email_verified": 1,
     "deleted_at": null,
-    "created_at": "2018-02-26 02:00:06",
-    "updated_at": "2018-02-26 02:00:06",
+    "created_at": "2018-02-27 18:39:32",
+    "updated_at": "2018-02-27 18:39:32",
     "items": {
         "current_page": 1,
         "data": [
             {
                 "id": 2,
-                "name": "Antonia",
-                "resturant_id": 1,
-                "image": "https:\/\/lorempixel.com\/150\/150\/food\/?32909",
-                "description": "Rerum officia dolores deleniti possimus sint officia qui ea.",
-                "price": 2,
+                "name": "Beryl",
+                "restaurant_id": 1,
+                "image": "https:\/\/lorempixel.com\/150\/150\/food\/?19620",
+                "description": "Aut temporibus magnam at magnam minima omnis occaecati beatae.",
+                "price": 1,
                 "user_id": 1,
                 "measurement": "bowl",
                 "quantity": 2,
                 "deleted_at": null,
-                "created_at": "2018-02-26 02:00:06",
-                "updated_at": "2018-02-26 02:00:06",
-                "formatted_price": "GHC 2.00"
+                "created_at": "2018-02-27 18:39:32",
+                "updated_at": "2018-02-27 18:39:32",
+                "formatted_price": "GHC 1.00"
             }
         ],
-        "first_page_url": "http:\/\/localhost\/api\/v1\/resturants\/1?page=1",
+        "first_page_url": "http:\/\/localhost\/api\/v1\/restaurants\/1?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http:\/\/localhost\/api\/v1\/resturants\/1?page=1",
+        "last_page_url": "http:\/\/localhost\/api\/v1\/restaurants\/1?page=1",
         "next_page_url": null,
-        "path": "http:\/\/localhost\/api\/v1\/resturants\/1",
+        "path": "http:\/\/localhost\/api\/v1\/restaurants\/1",
         "per_page": 20,
         "prev_page_url": null,
         "to": 1,
@@ -738,14 +743,14 @@ $.ajax(settings).done(function (response) {
     }
 }</code></pre>
 <h3>HTTP Request</h3>
-<p><code>GET api/v1/resturants/{resturant}</code></p>
-<p><code>HEAD api/v1/resturants/{resturant}</code></p>
-<!-- END_5c475d198dde109f40d350154d38700d -->
+<p><code>GET api/v1/restaurants/{restaurant}</code></p>
+<p><code>HEAD api/v1/restaurants/{restaurant}</code></p>
+<!-- END_e0300b8b707c1db9b160b9d5a851ae0a -->
 <h1>Search</h1>
-<p>Search for either Resturants or Items</p>
+<p>Search for either Restaurants or Items</p>
 <!-- START_e19c9e19f1f1208528a69cd2ef4c01dd -->
 <h2>Search</h2>
-<p>This will allow the clients to seach for items, resturants
+<p>This will allow the clients to seach for items, restaurants
 or a combination of both.</p>
 <blockquote>
 <p>Example request:</p>
@@ -1274,7 +1279,63 @@ $.ajax(settings).done(function (response) {
 });</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/checkout/{checkout}</code></p>
-<!-- END_0b2ac70127b23deb237a44393c06fa66 -->
+<!-- END_0b2ac70127b23deb237a44393c06fa66 --><h1>Errors</h1>
+<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Whiteboard allows you to optionally separate out your docs into many files...just save them to the `includes` folder and add them to the top of your `index.md`'s frontmatter. Files are included in the order listed.</aside>
+<p>The Kittn API uses the following error codes:</p>
+<table>
+<thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>Bad Request -- Your request sucks</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized -- Your API key is wrong</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden -- The kitten requested is hidden for administrators only</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found -- The specified kitten could not be found</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed -- You tried to access a kitten with an invalid method</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable -- You requested a format that isn't json</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone -- The kitten requested has been removed from our servers</td>
+</tr>
+<tr>
+<td>418</td>
+<td>I'm a teapot</td>
+</tr>
+<tr>
+<td>429</td>
+<td>Too Many Requests -- You're requesting too many kittens! Slow down!</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable -- We're temporarially offline for maintanance. Please try again later.</td>
+</tr>
+</tbody>
+</table>
       </div>
       <div class="dark-box">
                         <div class="lang-selector">
