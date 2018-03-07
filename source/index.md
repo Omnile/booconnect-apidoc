@@ -1863,7 +1863,7 @@ Add rating to an item or restaurant
 curl -X POST "http://booconnect.run/api/v1/ratings" \
 -H "Accept: application/json" \
     -d "rating"="2" \
-    -d "rateable_id"="30647" \
+    -d "rateable_id"="dignissimos" \
     -d "rateable_type"="dignissimos" \
     -d "comment"="dignissimos" \
 
@@ -1877,7 +1877,7 @@ var settings = {
     "method": "POST",
     "data": {
         "rating": 2,
-        "rateable_id": 30647,
+        "rateable_id": "dignissimos",
         "rateable_type": "dignissimos",
         "comment": "dignissimos"
 },
@@ -1900,7 +1900,7 @@ $.ajax(settings).done(function (response) {
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
     rating | numeric |  required  | Minimum: `1` Maximum: `5`
-    rateable_id | numeric |  required  | 
+    rateable_id | string |  required  | 
     rateable_type | string |  optional  | 
     comment | string |  optional  | 
 
@@ -2388,50 +2388,50 @@ $.ajax(settings).done(function (response) {
     "current_page": 1,
     "data": [
         {
-            "id": "237c9230-2247-11e8-8a20-adfdaca11cea",
-            "name": "Keeling, Welch and Kiehn",
-            "phone": "+1.782.909.5059",
-            "registration_no": "24130",
-            "first_name": "Sadie",
-            "last_name": "Langworth",
+            "id": "a4301250-2247-11e8-a32f-7577ee98097f",
+            "name": "Dooley, Kertzmann and Cronin",
+            "phone": "+1.389.646.0691",
+            "registration_no": "46562",
+            "first_name": "Kristian",
+            "last_name": "Kemmer",
             "user_id": "1",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?26698",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?87100",
-            "place": "Port Fletcher",
-            "city": "Lydaborough",
-            "state": "California",
-            "country": "Finland",
-            "address": "6040 Kaitlin Curve",
-            "website": "cummerata.com",
-            "description": "Sed minus voluptatem est vero voluptatum.",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?38649",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?97211",
+            "place": "West Rudolphchester",
+            "city": "West Milfordtown",
+            "state": "Connecticut",
+            "country": "Holy See (Vatican City State)",
+            "address": "7486 Collier Turnpike",
+            "website": "wilderman.com",
+            "description": "Quo aliquid minima et et.",
             "phone_verified": 0,
-            "email_verified": 1,
+            "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-03-07 20:35:56",
-            "updated_at": "2018-03-07 20:35:56"
+            "created_at": "2018-03-07 20:39:32",
+            "updated_at": "2018-03-07 20:39:32"
         },
         {
-            "id": "237da160-2247-11e8-872d-8710bb0a3c42",
-            "name": "Littel PLC",
-            "phone": "212-841-9899",
-            "registration_no": "26973",
-            "first_name": "Alvera",
-            "last_name": "Nicolas",
-            "user_id": "1",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?72567",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?71434",
-            "place": "Mortimerstad",
-            "city": "North Sonnyfurt",
-            "state": "Georgia",
-            "country": "Serbia",
-            "address": "654 O'Kon Knoll",
-            "website": "borer.org",
-            "description": "Incidunt sapiente odio quasi molestiae sequi.",
+            "id": "a4306d70-2247-11e8-bc12-f5a1553a0291",
+            "name": "Marvin-Dietrich",
+            "phone": "(268) 898-7102 x339",
+            "registration_no": "43289",
+            "first_name": "Eliezer",
+            "last_name": "Dibbert",
+            "user_id": "2",
+            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?20520",
+            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?20961",
+            "place": "East Melyssa",
+            "city": "Watershaven",
+            "state": "Alabama",
+            "country": "Madagascar",
+            "address": "2703 Will Lane",
+            "website": "mohr.com",
+            "description": "Sit eveniet ut aperiam quo nobis et.",
             "phone_verified": 1,
-            "email_verified": 1,
+            "email_verified": 0,
             "deleted_at": null,
-            "created_at": "2018-03-07 20:35:56",
-            "updated_at": "2018-03-07 20:35:56"
+            "created_at": "2018-03-07 20:39:32",
+            "updated_at": "2018-03-07 20:39:32"
         }
     ],
     "first_page_url": "http:\/\/localhost\/api\/v1\/restaurants?page=1",
@@ -3171,7 +3171,7 @@ Add an item to wishlist
 ```bash
 curl -X POST "http://booconnect.run/api/v1/wishlist" \
 -H "Accept: application/json" \
-    -d "item_id"="1715927" \
+    -d "item_id"="est" \
 
 ```
 
@@ -3182,7 +3182,7 @@ var settings = {
     "url": "http://booconnect.run/api/v1/wishlist",
     "method": "POST",
     "data": {
-        "item_id": 1715927
+        "item_id": "est"
 },
     "headers": {
         "accept": "application/json"
@@ -3202,7 +3202,7 @@ $.ajax(settings).done(function (response) {
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    item_id | numeric |  required  | Valid item id
+    item_id | string |  required  | Valid item id
 
 <!-- END_3e7cbd9fc15711ca2f1ba22883c3187f -->
 
