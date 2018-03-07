@@ -382,124 +382,110 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Trying to get property of non-object",
-    "exception": "ErrorException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/app\/Item.php",
-    "line": 41,
+    "message": "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'booconnect.items' doesn't exist (SQL: select count(*) as aggregate from `items`)",
+    "exception": "Illuminate\\Database\\QueryException",
+    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+    "line": 664,
     "trace": [
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/app\/Item.php",
-            "line": 41,
-            "function": "handleError",
-            "class": "Illuminate\\Foundation\\Bootstrap\\HandleExceptions",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+            "line": 624,
+            "function": "runQueryCallback",
+            "class": "Illuminate\\Database\\Connection",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Concerns\/HasAttributes.php",
-            "line": 444,
-            "function": "getInCartAttribute",
-            "class": "App\\Item",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+            "line": 333,
+            "function": "run",
+            "class": "Illuminate\\Database\\Connection",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Concerns\/HasAttributes.php",
-            "line": 456,
-            "function": "mutateAttribute",
-            "class": "Illuminate\\Database\\Eloquent\\Model",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1764,
+            "function": "select",
+            "class": "Illuminate\\Database\\Connection",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Concerns\/HasAttributes.php",
-            "line": 109,
-            "function": "mutateAttributeForArray",
-            "class": "Illuminate\\Database\\Eloquent\\Model",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1749,
+            "function": "runSelect",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1849,
+            "function": "get",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1822,
+            "function": "runPaginationCountQuery",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
+            "line": 712,
+            "function": "getCountForPagination",
+            "class": "Illuminate\\Database\\Query\\Builder",
             "type": "->"
         },
         {
             "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Model.php",
-            "line": 972,
-            "function": "attributesToArray",
+            "line": 1504,
+            "function": "paginate",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/app\/Http\/Controllers\/ItemController.php",
+            "line": 23,
+            "function": "__call",
             "class": "Illuminate\\Database\\Eloquent\\Model",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Support\/Collection.php",
-            "line": 1684,
-            "function": "toArray",
-            "class": "Illuminate\\Database\\Eloquent\\Model",
+            "function": "index",
+            "class": "App\\Http\\Controllers\\ItemController",
             "type": "->"
         },
         {
-            "function": "Illuminate\\Support\\{closure}",
-            "class": "Illuminate\\Support\\Collection",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+            "line": 54,
+            "function": "call_user_func_array"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+            "line": 45,
+            "function": "callAction",
+            "class": "Illuminate\\Routing\\Controller",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Support\/Collection.php",
-            "line": 1685,
-            "function": "array_map"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pagination\/LengthAwarePaginator.php",
-            "line": 165,
-            "function": "toArray",
-            "class": "Illuminate\\Support\\Collection",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+            "line": 212,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\ControllerDispatcher",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pagination\/LengthAwarePaginator.php",
-            "line": 186,
-            "function": "toArray",
-            "class": "Illuminate\\Pagination\\LengthAwarePaginator",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+            "line": 169,
+            "function": "runController",
+            "class": "Illuminate\\Routing\\Route",
             "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pagination\/LengthAwarePaginator.php",
-            "line": 197,
-            "function": "jsonSerialize",
-            "class": "Illuminate\\Pagination\\LengthAwarePaginator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/JsonResponse.php",
-            "line": 65,
-            "function": "toJson",
-            "class": "Illuminate\\Pagination\\LengthAwarePaginator",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/http-foundation\/JsonResponse.php",
-            "line": 50,
-            "function": "setData",
-            "class": "Illuminate\\Http\\JsonResponse",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/JsonResponse.php",
-            "line": 31,
-            "function": "__construct",
-            "class": "Symfony\\Component\\HttpFoundation\\JsonResponse",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 725,
-            "function": "__construct",
-            "class": "Illuminate\\Http\\JsonResponse",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 699,
-            "function": "toResponse",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "::"
         },
         {
             "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 659,
-            "function": "prepareResponse",
-            "class": "Illuminate\\Routing\\Router",
+            "function": "run",
+            "class": "Illuminate\\Routing\\Route",
             "type": "->"
         },
         {
@@ -900,44 +886,100 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "No query results for model [App\\Item].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
+    "message": "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'booconnect.items' doesn't exist (SQL: select * from `items` where `id` = 1 limit 1)",
+    "exception": "Illuminate\\Database\\QueryException",
+    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+    "line": 664,
     "trace": [
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+            "line": 624,
+            "function": "runQueryCallback",
+            "class": "Illuminate\\Database\\Connection",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/app\/Exceptions\/Handler.php",
-            "line": 51,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+            "line": 333,
+            "function": "run",
+            "class": "Illuminate\\Database\\Connection",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1764,
+            "function": "select",
+            "class": "Illuminate\\Database\\Connection",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1749,
+            "function": "runSelect",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
+            "line": 483,
+            "function": "get",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
+            "line": 467,
+            "function": "getModels",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Concerns\/BuildsQueries.php",
+            "line": 77,
+            "function": "get",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Model.php",
+            "line": 1365,
+            "function": "first",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ImplicitRouteBinding.php",
+            "line": 35,
+            "function": "resolveRouteBinding",
+            "class": "Illuminate\\Database\\Eloquent\\Model",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 762,
+            "function": "resolveForRoute",
+            "class": "Illuminate\\Routing\\ImplicitRouteBinding",
+            "type": "::"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/SubstituteBindings.php",
+            "line": 39,
+            "function": "substituteImplicitBindings",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 149,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
             "type": "->"
         },
         {
             "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "->"
         },
         {
@@ -1863,7 +1905,7 @@ Add rating to an item or restaurant
 curl -X POST "http://booconnect.run/api/v1/ratings" \
 -H "Accept: application/json" \
     -d "rating"="2" \
-    -d "rateable_id"="dignissimos" \
+    -d "rateable_id"="30647" \
     -d "rateable_type"="dignissimos" \
     -d "comment"="dignissimos" \
 
@@ -1877,7 +1919,7 @@ var settings = {
     "method": "POST",
     "data": {
         "rating": 2,
-        "rateable_id": "dignissimos",
+        "rateable_id": 30647,
         "rateable_type": "dignissimos",
         "comment": "dignissimos"
 },
@@ -1900,7 +1942,7 @@ $.ajax(settings).done(function (response) {
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
     rating | numeric |  required  | Minimum: `1` Maximum: `5`
-    rateable_id | string |  required  | 
+    rateable_id | numeric |  required  | 
     rateable_type | string |  optional  | 
     comment | string |  optional  | 
 
@@ -1938,44 +1980,100 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "No query results for model [App\\Rating].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
+    "message": "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'booconnect.ratings' doesn't exist (SQL: select * from `ratings` where `id` = 1 limit 1)",
+    "exception": "Illuminate\\Database\\QueryException",
+    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+    "line": 664,
     "trace": [
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+            "line": 624,
+            "function": "runQueryCallback",
+            "class": "Illuminate\\Database\\Connection",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/app\/Exceptions\/Handler.php",
-            "line": 51,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+            "line": 333,
+            "function": "run",
+            "class": "Illuminate\\Database\\Connection",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1764,
+            "function": "select",
+            "class": "Illuminate\\Database\\Connection",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1749,
+            "function": "runSelect",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
+            "line": 483,
+            "function": "get",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
+            "line": 467,
+            "function": "getModels",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Concerns\/BuildsQueries.php",
+            "line": 77,
+            "function": "get",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Model.php",
+            "line": 1365,
+            "function": "first",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ImplicitRouteBinding.php",
+            "line": 35,
+            "function": "resolveRouteBinding",
+            "class": "Illuminate\\Database\\Eloquent\\Model",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 762,
+            "function": "resolveForRoute",
+            "class": "Illuminate\\Routing\\ImplicitRouteBinding",
+            "type": "::"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/SubstituteBindings.php",
+            "line": 39,
+            "function": "substituteImplicitBindings",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 149,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
             "type": "->"
         },
         {
             "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "->"
         },
         {
@@ -2385,65 +2483,466 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "current_page": 1,
-    "data": [
+    "message": "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'booconnect.restaurants' doesn't exist (SQL: select count(*) as aggregate from `restaurants`)",
+    "exception": "Illuminate\\Database\\QueryException",
+    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+    "line": 664,
+    "trace": [
         {
-            "id": "9d455ae0-224a-11e8-bc72-9109aa7f6bce",
-            "name": "O'Connell, McClure and Kris",
-            "phone": "456.255.2852 x9249",
-            "registration_no": "40226",
-            "first_name": "Kelsi",
-            "last_name": "Towne",
-            "user_id": "1",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?26835",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?98007",
-            "place": "South Leila",
-            "city": "East Westonberg",
-            "state": "Nevada",
-            "country": "Nepal",
-            "address": "89222 Bashirian Drive",
-            "website": "kirlin.com",
-            "description": "Rem rerum dolorem non eum ducimus amet.",
-            "phone_verified": 1,
-            "email_verified": 1,
-            "deleted_at": null,
-            "created_at": "2018-03-07 21:00:49",
-            "updated_at": "2018-03-07 21:00:49"
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+            "line": 624,
+            "function": "runQueryCallback",
+            "class": "Illuminate\\Database\\Connection",
+            "type": "->"
         },
         {
-            "id": "9d45aec0-224a-11e8-a5f3-99b54db419f8",
-            "name": "Waelchi-Feeney",
-            "phone": "508.613.9356 x3902",
-            "registration_no": "87186",
-            "first_name": "Kenyatta",
-            "last_name": "Moore",
-            "user_id": "2",
-            "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?55318",
-            "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?57989",
-            "place": "South Chayaton",
-            "city": "South Minervaville",
-            "state": "Idaho",
-            "country": "Haiti",
-            "address": "784 Graham Islands",
-            "website": "thompson.com",
-            "description": "Sequi dolorem perferendis eius voluptatem magnam aut similique.",
-            "phone_verified": 0,
-            "email_verified": 1,
-            "deleted_at": null,
-            "created_at": "2018-03-07 21:00:49",
-            "updated_at": "2018-03-07 21:00:49"
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+            "line": 333,
+            "function": "run",
+            "class": "Illuminate\\Database\\Connection",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1764,
+            "function": "select",
+            "class": "Illuminate\\Database\\Connection",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1749,
+            "function": "runSelect",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1849,
+            "function": "get",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1822,
+            "function": "runPaginationCountQuery",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
+            "line": 712,
+            "function": "getCountForPagination",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Model.php",
+            "line": 1504,
+            "function": "paginate",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/app\/Http\/Controllers\/RestaurantController.php",
+            "line": 25,
+            "function": "__call",
+            "class": "Illuminate\\Database\\Eloquent\\Model",
+            "type": "->"
+        },
+        {
+            "function": "index",
+            "class": "App\\Http\\Controllers\\RestaurantController",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+            "line": 54,
+            "function": "call_user_func_array"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+            "line": 45,
+            "function": "callAction",
+            "class": "Illuminate\\Routing\\Controller",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+            "line": 212,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\ControllerDispatcher",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+            "line": 169,
+            "function": "runController",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 659,
+            "function": "run",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 30,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/SubstituteBindings.php",
+            "line": 41,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 149,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
+            "line": 57,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 149,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 102,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 661,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 636,
+            "function": "runRouteWithinStack",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 602,
+            "function": "runRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 591,
+            "function": "dispatchToRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "line": 176,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 30,
+            "function": "Illuminate\\Foundation\\Http\\{closure}",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
+            "line": 57,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 149,
+            "function": "handle",
+            "class": "Fideloper\\Proxy\\TrustProxies",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
+            "line": 30,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 149,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
+            "line": 30,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 149,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
+            "line": 27,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 149,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
+            "line": 46,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 149,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 102,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "line": 151,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "line": 116,
+            "function": "sendRequestThroughRouter",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
+            "line": 139,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/AbstractGenerator.php",
+            "line": 125,
+            "function": "callRoute",
+            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Generators\/LaravelGenerator.php",
+            "line": 79,
+            "function": "getRouteResponse",
+            "class": "Mpociot\\ApiDoc\\Generators\\AbstractGenerator",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
+            "line": 264,
+            "function": "processRoute",
+            "class": "Mpociot\\ApiDoc\\Generators\\LaravelGenerator",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Mpociot\/ApiDoc\/Commands\/GenerateDocumentation.php",
+            "line": 85,
+            "function": "processLaravelRoutes",
+            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
+            "type": "->"
+        },
+        {
+            "function": "handle",
+            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "line": 29,
+            "function": "call_user_func_array"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "line": 87,
+            "function": "Illuminate\\Container\\{closure}",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "line": 31,
+            "function": "callBoundMethod",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
+            "line": 564,
+            "function": "call",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
+            "line": 183,
+            "function": "call",
+            "class": "Illuminate\\Container\\Container",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Command\/Command.php",
+            "line": 252,
+            "function": "execute",
+            "class": "Illuminate\\Console\\Command",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
+            "line": 170,
+            "function": "run",
+            "class": "Symfony\\Component\\Console\\Command\\Command",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
+            "line": 865,
+            "function": "run",
+            "class": "Illuminate\\Console\\Command",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
+            "line": 241,
+            "function": "doRunCommand",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/symfony\/console\/Application.php",
+            "line": 143,
+            "function": "doRun",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
+            "line": 88,
+            "function": "run",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
+            "line": 121,
+            "function": "run",
+            "class": "Illuminate\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/artisan",
+            "line": 37,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Console\\Kernel",
+            "type": "->"
         }
-    ],
-    "first_page_url": "http:\/\/localhost\/api\/v1\/restaurants?page=1",
-    "from": 1,
-    "last_page": 1,
-    "last_page_url": "http:\/\/localhost\/api\/v1\/restaurants?page=1",
-    "next_page_url": null,
-    "path": "http:\/\/localhost\/api\/v1\/restaurants",
-    "per_page": 20,
-    "prev_page_url": null,
-    "to": 2,
-    "total": 2
+    ]
 }
 ```
 
@@ -2486,44 +2985,100 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "No query results for model [App\\Restaurant].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
+    "message": "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'booconnect.restaurants' doesn't exist (SQL: select * from `restaurants` where `id` = 1 limit 1)",
+    "exception": "Illuminate\\Database\\QueryException",
+    "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+    "line": 664,
     "trace": [
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+            "line": 624,
+            "function": "runQueryCallback",
+            "class": "Illuminate\\Database\\Connection",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/app\/Exceptions\/Handler.php",
-            "line": 51,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
+            "line": 333,
+            "function": "run",
+            "class": "Illuminate\\Database\\Connection",
             "type": "->"
         },
         {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1764,
+            "function": "select",
+            "class": "Illuminate\\Database\\Connection",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
+            "line": 1749,
+            "function": "runSelect",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
+            "line": 483,
+            "function": "get",
+            "class": "Illuminate\\Database\\Query\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
+            "line": 467,
+            "function": "getModels",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Concerns\/BuildsQueries.php",
+            "line": 77,
+            "function": "get",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Model.php",
+            "line": 1365,
+            "function": "first",
+            "class": "Illuminate\\Database\\Eloquent\\Builder",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ImplicitRouteBinding.php",
+            "line": 35,
+            "function": "resolveRouteBinding",
+            "class": "Illuminate\\Database\\Eloquent\\Model",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 762,
+            "function": "resolveForRoute",
+            "class": "Illuminate\\Routing\\ImplicitRouteBinding",
+            "type": "::"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/SubstituteBindings.php",
+            "line": 39,
+            "function": "substituteImplicitBindings",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 149,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
             "type": "->"
         },
         {
             "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/Users\/ovac\/codes\/omnile\/booconnect\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "->"
         },
         {
@@ -3171,7 +3726,7 @@ Add an item to wishlist
 ```bash
 curl -X POST "http://booconnect.run/api/v1/wishlist" \
 -H "Accept: application/json" \
-    -d "item_id"="est" \
+    -d "item_id"="1715927" \
 
 ```
 
@@ -3182,7 +3737,7 @@ var settings = {
     "url": "http://booconnect.run/api/v1/wishlist",
     "method": "POST",
     "data": {
-        "item_id": "est"
+        "item_id": 1715927
 },
     "headers": {
         "accept": "application/json"
@@ -3202,7 +3757,7 @@ $.ajax(settings).done(function (response) {
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    item_id | string |  required  | Valid item id
+    item_id | numeric |  required  | Valid item id
 
 <!-- END_3e7cbd9fc15711ca2f1ba22883c3187f -->
 
